@@ -1021,11 +1021,75 @@ nav ul li button:hover, nav ul li button:active, nav ul li button:focus, nav ul 
 	padding-bottom: 10px;	
 }
 
+#guestbook {
+	display: inline-block;
+}
+
+#guestbook textarea {
+	width: 100%;
+}
+
+#guestbook_link {
+	float: right;
+	cursor: pointer;
+}
+
+#guestbook button {
+	float: right;
+}
+
+#guestbook input, #guestbook textarea {
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+#guestbook .error {
+	color: red;
+	display: none;
+}
+
+#guestbook img {
+	float: right;
+}
+
 #education p {
 	padding-bottom: 5px !important;
 	margin-bottom: 0px !important;
 	padding-left: 20px;
 }
+
+#posts .post {
+	border-top: 1px solid #ddd;
+}
+
+#posts img {
+	cursor: pointer;
+}
+
+/*#posts img:hover {
+	width: 40px;
+	height: 40px;
+}*/
+
+#posts .more_posts {
+	border-top: 1px solid #ddd;
+	text-align: center;
+}
+
+#posts span {
+	float: right;
+}
+
+#posts .post p {
+	padding-bottom: 5px !important;
+	margin-bottom: 0px !important;
+}
+
+#posts .message {
+	padding-left: 10px;
+	padding-bottom: 10px !important;
+	word-wrap: break-word;
+} 
 
 #education p:last-child {
 	padding-bottom: 10px !important;
@@ -1146,6 +1210,51 @@ nav ul li button:hover, nav ul li button:active, nav ul li button:focus, nav ul 
 	float: right;
 	text-align: right;
 }
+
+.spinner {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	float: right;
+/*	left: 50%;
+	margin-left: -20px;
+
+	top: 50%;
+	margin-top: -20px;*/
+}
+
+.double-bounce1, .double-bounce2 {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #333;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	-webkit-animation: bounce 2.0s infinite ease-in-out;
+	animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+	0%, 100% { -webkit-transform: scale(0.0) }
+	50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+	0%, 100% { transform: scale(0.0) }
+	50% { transform: scale(1.0) }
+}
+
+
+// animate.min.css
+
 
 .projectNavClose button, .projectNavButtons button, .projectNavEnlarge button {
 	font-family: Arial, sans-serif;

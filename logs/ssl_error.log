@@ -105,3 +105,29 @@
 [Thu Jan 16 19:21:35.245840 2014] [ssl:warn] [pid 6680:tid 476] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
 [Thu Jan 16 19:21:35.566052 2014] [ssl:warn] [pid 4380:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
 [Thu Jan 16 19:21:35.617086 2014] [ssl:warn] [pid 4380:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Fri Jan 17 15:11:57.166303 2014] [core:error] [pid 4380:tid 1680] [client 199.123.76.18:58626] AH00135: Invalid method in request G\xbfET /favicon.ico HTTP/1.1
+[Fri Jan 17 15:12:02.286335 2014] [core:error] [pid 4380:tid 1668] [client 199.123.76.18:2120] AH00135: Invalid method in request G\xacET / HTTP/1.1
+[Fri Jan 17 15:12:06.536463 2014] [core:error] [pid 4380:tid 1668] [client 199.123.76.18:52508] AH00135: Invalid method in request GVET / HTTP/1.1
+[Fri Jan 17 15:12:09.554399 2014] [core:error] [pid 4380:tid 1668] [client 199.123.76.18:7105] AH00135: Invalid method in request G>ET / HTTP/1.1
+[Fri Jan 17 15:12:11.352365 2014] [core:error] [pid 4380:tid 1668] [client 199.123.76.18:23678] AH00126: Invalid URI in request G\x0cET / HTTP/1.1
+[Fri Jan 17 15:12:17.917101 2014] [core:error] [pid 4380:tid 1668] [client 199.123.76.18:39403] AH00135: Invalid method in request GhET / HTTP/1.1
+[Fri Jan 17 15:12:26.341282 2014] [core:error] [pid 4380:tid 1668] [client 199.123.76.18:20150] AH00135: Invalid method in request G\xb6ET / HTTP/1.1
+[Fri Jan 17 15:14:28.034123 2014] [core:error] [pid 4380:tid 1680] [client 199.123.76.18:11401] AH00135: Invalid method in request G(ET / HTTP/1.1
+[Fri Jan 17 15:17:01.998495 2014] [core:error] [pid 4380:tid 1680] [client 199.123.76.18:43689] AH00135: Invalid method in request G\xd0ET /favicon.ico HTTP/1.1
+[Fri Jan 17 15:28:51.290483 2014] [core:error] [pid 4380:tid 1680] [client 199.123.76.18:57930] AH00135: Invalid method in request GlET / HTTP/1.1
+[Fri Jan 17 15:28:53.862410 2014] [core:error] [pid 4380:tid 1680] [client 199.123.76.18:44522] AH00135: Invalid method in request G+ET / HTTP/1.1
+[Fri Jan 17 15:28:56.272033 2014] [core:error] [pid 4380:tid 1680] [client 199.123.76.18:60318] AH00135: Invalid method in request GEET / HTTP/1.1
+[Fri Jan 17 15:29:06.365390 2014] [core:error] [pid 4380:tid 1680] [client 199.123.76.18:37471] AH00135: Invalid method in request G\xe5ET / HTTP/1.1
+[Fri Jan 17 15:29:13.556747 2014] [core:error] [pid 4380:tid 1680] [client 199.123.76.18:10830] AH00135: Invalid method in request G\xc7ET / HTTP/1.1
+[Fri Jan 17 15:33:55.307424 2014] [core:error] [pid 4380:tid 1668] [client 199.123.76.18:19243] AH00135: Invalid method in request G\x9cET / HTTP/1.1
+[Fri Jan 17 15:33:55.896582 2014] [core:error] [pid 4380:tid 1668] [client 199.123.76.18:62930] AH00135: Invalid method in request GrET /favicon.ico HTTP/1.1
+[Fri Jan 17 15:34:01.157227 2014] [core:error] [pid 4380:tid 1640] [client 199.123.76.18:60719] AH00135: Invalid method in request G\xc8ET / HTTP/1.1
+[Fri Jan 17 15:34:06.676464 2014] [core:error] [pid 4380:tid 1640] [client 199.123.76.18:33584] AH00135: Invalid method in request G\x11ET / HTTP/1.1
+[Fri Jan 17 15:34:12.228398 2014] [core:error] [pid 4380:tid 1640] [client 199.123.76.18:50975] AH00135: Invalid method in request G\x8aET / HTTP/1.1
+[Fri Jan 17 15:34:16.190523 2014] [core:error] [pid 4380:tid 1640] [client 199.123.76.18:7606] AH00135: Invalid method in request GAET / HTTP/1.1
+[Fri Jan 17 15:34:34.586031 2014] [core:error] [pid 4380:tid 1640] [client 199.123.76.18:28961] AH00135: Invalid method in request G\x98ET / HTTP/1.1
+[Fri Jan 17 15:39:32.524250 2014] [core:error] [pid 4380:tid 1640] [client 199.123.76.18:35691] AH00135: Invalid method in request G\x85ET / HTTP/1.1
+[Sat Jan 18 17:13:19.139719 2014] [ssl:warn] [pid 8972:tid 480] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 17:13:19.210766 2014] [ssl:warn] [pid 8972:tid 480] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 17:13:19.483948 2014] [ssl:warn] [pid 2664:tid 376] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 17:13:19.526977 2014] [ssl:warn] [pid 2664:tid 376] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled

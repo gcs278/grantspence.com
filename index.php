@@ -216,13 +216,50 @@ www.typeandgrids.c
 				<li><strong>R&eacute;sum&eacute;:</strong> <a href="resume.pdf">resume.pdf</a></li>
 				<li><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/pub/grant-spence/63/7a5/157/" target="_blank">www.linkedin.com/pub/grant-spence/63/7a5/157/</a></li>
 			</ul>
-			
+			<div id="posts"><a id="guestbook_link">Sign it!</a>
+				<h3>Guestbook Posts</h3>
+
+				<!-- This is where jQuery will put the data -->
+				<div class='more_posts'><p><a>Show More</a></p></div>
+			</div>
 		</div>
 		<!-- Column 2 ends ====================================================================== -->
 		
 		<!-- Column 1 begins ==================================================================== -->
 		<div class="ten columns offset-by-one">
 			
+			<div id="guestbook">
+				<h3>Guestbook</h3>
+					<div class="five columns" id="nameBlock">
+						Display Name: <input type="text" name="name" id="name" maxlength="22">
+						<div class="error">
+							Must have display name
+						</div>
+					</div>
+					<div class="four columns" id="emailBlock">
+						Email: <input type="text" name="email" id="email" maxlength="124">
+						<div class="error">
+							Must have an valid email address
+						</div>
+					</div>
+					<div class="nine columns">
+	
+					</div>
+					<div class="nine columns" id="messageBlock">
+						Message: <textarea type="text" name="message" id="message" maxlength="2000"></textarea>
+
+						<button id="submit" onclick=" guestbookSubmit()">Submit</button>
+						<div class="spinner">
+					      <div class="double-bounce1"></div>
+					      <div class="double-bounce2"></div>
+					    </div>
+					    <img src='images/check.svg' width='30px' height='30px'>
+						<div class="error">
+							Must have a message
+						</div>
+					</div>
+
+			</div>
 			<h3>About Myself</h3>
 			<p>
 			I am motivated and dedicated student that has developed a great passion for my major. My objective in life is to never stop learning about technology and eventually contribute to develop new technologies. On the job and in college I have fun learning about how things work. It fills me with a sense of excitement and passion.
@@ -303,4 +340,117 @@ www.typeandgrids.c
 	<!-- Footer ends ============================================================================ -->
 </div><!-- container -->
 </body>
+
+<script>
+range = 0;
+ $(window).ready(function() {
+ 	$('#guestbook').hide();
+ 	$('.spinner').hide();
+ 	$('#guestbook').find('img').hide();
+
+ 	$("#guestbook_link").click(function() {
+ 		var guestBook = $("#guestbook");
+
+ 		guestBook.slideToggle("fast");
+ 		event.preventDefault();
+ 	});
+
+ 	getGuestBook(range);
+ 	range += 1;
+
+ 	$('.more_posts').click(function() {
+ 		getGuestBook(range);
+ 		range += 1;
+	});
+
+
+ });
+ 	function getGuestBook(range) {
+ 		$.getJSON("Ajax/guestbook_get.php?range="+range, function( data ) {
+ 			display = "";
+ 			i = 0;
+ 			$.each(data, function (index, value) {
+ 				display += formatPost(value.name, value.date, value.message);
+ 				i=index;
+ 			});
+
+ 			if ( display == "" || i < 4) {
+ 				$('.more_posts').hide();
+ 			}
+
+ 			if ( range == 0 )
+ 				$("#posts").find('h3').after(display);
+ 			else
+ 				$("#posts").find('.post').last().after(display);
+ 		});
+ 	}
+
+ 	function formatPost(name, date, message) {
+		display = "<div class='post'>" + 
+			"<p class='head'>By <strong>" + name + "</strong><span>" +
+			date +"</span></p>" + 
+			"<p class='message'><em>" + message + "</em></p></div>";
+		return display;
+ 	}
+
+	function guestbookSubmit()  {
+		
+		// $('#guestbook').find('button').prop('disabled',false);
+		var name = $('#guestbook').find('#name').val();
+		var email = $('#guestbook').find('#email').val();
+		var message = $('#guestbook').find('#message').val();
+
+		var error = false;
+
+		if ( !name ) {
+		 	$('#nameBlock').find('.error').slideDown('fast');
+		 	error = true;
+		} else {
+			$('#nameBlock').find('.error').slideUp('fast');
+		}
+		if ( !email  || !IsEmail(email) ) {
+			$('#emailBlock').find('.error').slideDown('fast');
+		 	error = true;
+		} else {
+			$('#emailBlock').find('.error').slideUp('fast');
+		}
+		if ( !message ) {
+			$('#messageBlock').find('.error').slideDown('fast');
+		 	error = true;
+		} else {
+			$('#messageBlock').find('.error').slideUp('fast');
+		}
+		if ( error ) {
+			return;
+		}
+		//$('#guestbook').find('button').hide();
+		//$('.spinner').fadeIn('fast');
+		
+		$.post("Ajax/guestbook.php", {
+			name: name,
+			email: email,
+			message: message
+		},
+		function( data ) {
+		  $( ".result" ).html( data );
+		  if ( data == 'true' ) {
+			$('#guestbook').find('button').hide();
+			$('#guestbook').find('img').fadeIn('fast');
+			$('#guestbook').find('#name').attr('disabled','disabled');
+			$('#guestbook').find('#email').attr('disabled','disabled');
+			$('#guestbook').find('#message').attr('disabled','disabled');
+			$('#posts').find('h3').after(formatPost(name, "<?php echo date('g:i M j', time() - 10800)?>", message));
+		  }
+
+		  //$('.spinner').fadeOut('fast');
+		  //$('#guestbook').find('button').fadeIn('fast');
+	});
+
+	function IsEmail(email) {
+	  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	  return regex.test(email);
+	}
+}
+</script>
+
 </html>
