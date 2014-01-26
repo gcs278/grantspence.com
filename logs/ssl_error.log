@@ -131,3 +131,48 @@
 [Sat Jan 18 17:13:19.210766 2014] [ssl:warn] [pid 8972:tid 480] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
 [Sat Jan 18 17:13:19.483948 2014] [ssl:warn] [pid 2664:tid 376] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
 [Sat Jan 18 17:13:19.526977 2014] [ssl:warn] [pid 2664:tid 376] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 19:31:54.672207 2014] [ssl:warn] [pid 8084:tid 472] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 19:31:54.734248 2014] [ssl:warn] [pid 8084:tid 472] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 19:31:55.084480 2014] [ssl:warn] [pid 8812:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 19:31:55.147523 2014] [ssl:warn] [pid 8812:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 19:36:21.120196 2014] [ssl:warn] [pid 9856:tid 472] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 19:36:21.176233 2014] [ssl:warn] [pid 9856:tid 472] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 19:36:21.566492 2014] [ssl:warn] [pid 9896:tid 372] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 19:36:21.630535 2014] [ssl:warn] [pid 9896:tid 372] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 20:29:58.704962 2014] [ssl:warn] [pid 1244:tid 472] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 20:29:59.187432 2014] [ssl:warn] [pid 1244:tid 472] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 20:29:59.410982 2014] [ssl:warn] [pid 3012:tid 364] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 20:29:59.529739 2014] [ssl:warn] [pid 3012:tid 364] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 20:39:06.939676 2014] [ssl:warn] [pid 4584:tid 488] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 20:39:07.335712 2014] [ssl:warn] [pid 4584:tid 488] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 20:39:07.621838 2014] [ssl:warn] [pid 1312:tid 364] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 20:39:07.748823 2014] [ssl:warn] [pid 1312:tid 364] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:16:06.897909 2014] [ssl:warn] [pid 924:tid 484] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:16:06.937935 2014] [ssl:warn] [pid 924:tid 484] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:16:07.199109 2014] [ssl:warn] [pid 916:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:16:07.234132 2014] [ssl:warn] [pid 916:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:16:47.344223 2014] [ssl:warn] [pid 6448:tid 472] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:16:47.426277 2014] [ssl:warn] [pid 6448:tid 472] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:16:47.638417 2014] [ssl:warn] [pid 6104:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:16:47.689451 2014] [ssl:warn] [pid 6104:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:17:11.760368 2014] [ssl:warn] [pid 5560:tid 472] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:17:11.821408 2014] [ssl:warn] [pid 5560:tid 472] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:17:12.057565 2014] [ssl:warn] [pid 5584:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:17:12.121607 2014] [ssl:warn] [pid 5584:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:17:33.033579 2014] [ssl:warn] [pid 4736:tid 476] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:17:33.097622 2014] [ssl:warn] [pid 4736:tid 476] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:17:33.325773 2014] [ssl:warn] [pid 4596:tid 364] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:17:33.386814 2014] [ssl:warn] [pid 4596:tid 364] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:18:17.427194 2014] [ssl:warn] [pid 4648:tid 476] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:18:17.500241 2014] [ssl:warn] [pid 4648:tid 476] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:18:17.708084 2014] [ssl:warn] [pid 5216:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sat Jan 18 22:18:17.776166 2014] [ssl:warn] [pid 5216:tid 368] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sun Jan 19 18:27:48.705183 2014] [ssl:warn] [pid 5428:tid 480] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sun Jan 19 18:27:48.854565 2014] [ssl:warn] [pid 5428:tid 480] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sun Jan 19 18:27:49.408169 2014] [ssl:warn] [pid 5464:tid 364] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Sun Jan 19 18:27:49.458203 2014] [ssl:warn] [pid 5464:tid 364] AH01902: Host www.grantspence.com:443: X.509 CRL storage locations configured, but CRL checking (SSLCARevocationCheck) is not enabled
+[Tue Jan 21 19:16:07.960786 2014] [cgi:error] [pid 5464:tid 1672] [client 91.208.223.8:58941] script not found or unable to stat: C:/wamp/cgi-bin
+[Tue Jan 21 19:16:09.029088 2014] [cgi:error] [pid 5464:tid 1664] [client 91.208.223.8:59390] script not found or unable to stat: C:/wamp/cgi-bin
+[Tue Jan 21 19:16:11.678300 2014] [cgi:error] [pid 5464:tid 1672] [client 91.208.223.8:59499] script not found or unable to stat: C:/wamp/cgi-bin
+[Tue Jan 21 19:16:13.120263 2014] [cgi:error] [pid 5464:tid 1664] [client 91.208.223.8:59578] script not found or unable to stat: C:/wamp/cgi-bin
+[Tue Jan 21 19:16:14.585848 2014] [cgi:error] [pid 5464:tid 1672] [client 91.208.223.8:59582] script not found or unable to stat: C:/wamp/cgi-bin

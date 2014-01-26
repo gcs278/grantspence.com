@@ -47,7 +47,14 @@ www.typeandgrids.c
 
 </head>
 <body>
-
+<?php
+// 	$name = "name";
+// 	$email = "email";
+// 	$message = "message alsdfjlksjadf;lksajdf;lk";
+// echo "C:\\wamp\\www\\mailsend1.17b14.exe -to gcs278@vt.edu -from grantspence.com@gmail.com -ssl -port 465 -auth -smtp smtp.gmail.com -sub \""
+// 				. $name . " posted [granspence.com]\" -M \"" . $name .
+// 				" with email address " . $email . " has posted on grantspence.com.\n The time is %date% %time%.\nThe message: " . $message ."\" +cc +bc -v -user grantspence.com@gmail.com -pass \"Aufc\"";
+?>
 <!-- Write preloader to page - this allows the site to load for users with JS disabled -->
 <script type="text/javascript">
 	document.write("<div id='sitePreloader'><div id='preloaderImage'><img src='images/site_preloader.gif' alt='Preloader' /></div></div>");
@@ -68,27 +75,27 @@ www.typeandgrids.c
 		<nav>
 			<h3>GSPENCE</h3>
 			<ul>
-				<li><button id="aboutPage">About</button></li>
-				<li><button id="workPage">Work</button></li>
+				<!-- <li><button id="aboutPage">About</button></li> -->
+<!-- 				<li><button id="workPage">Work</button></li> -->
 				<!--<li><a href="http://wordpress.org" target="_blank">Blog</a></li>-->
 			</ul>
 		</nav>
 		<hr />
 	</header>
 	<!-- Header ends ============================================================================ -->
-	
+
 	<!-- Work page begins ======================================================================= -->
-	<div id="work">
+<!-- 	<div id="work">
 	
 		<div id="overview" class="sixteen columns">
 			<h3>Junior in honors studying computer engineering</h3>
 			<hr />
 		</div>
 		
-		<div class="eight columns" id="col1">
+		<div class="eight columns" id="col1"> -->
 		
 			<!-- Project begins ================================================================= -->
-			<div class="project">
+<!-- 			<div class="project">
 				
 				<div class="projectThumbnail">
 					<svg class="thumbnailMask"></svg>
@@ -121,11 +128,11 @@ www.typeandgrids.c
 					</p>
 				</div>
 				
-			</div>
+			</div> -->
 			<!-- Project ends =================================================================== -->
 			
 			<!-- Project begins ================================================================= -->
-			<div class="project">
+<!-- 			<div class="project">
 				
 				<div class="projectThumbnail">
 					<svg class="thumbnailMask"></svg>
@@ -156,11 +163,11 @@ www.typeandgrids.c
 					</ul>
 				</div>
 				
-			</div>
+			</div> -->
 			<!-- Project ends =================================================================== -->
 			
 			<!-- Project begins ================================================================= -->
-			<div class="project">
+<!-- 			<div class="project">
 				
 				<div class="projectThumbnail">
 					<svg class="thumbnailMask"></svg>
@@ -189,17 +196,17 @@ www.typeandgrids.c
 					</ul>
 				</div>
 				
-			</div>
+			</div> -->
 			<!-- Project ends =================================================================== -->
 			
 			
-		</div><!-- col1 -->
+	<!-- 	</div> -->
 		
 		<!-- Even numbered projects are dynamically moved into this second column via JS -->
-		<div class="eight columns" id="col2">
+<!-- 		<div class="eight columns" id="col2">
 		</div>
 	
-	</div>
+	</div> -->
 	<!-- Work page ends ========================================================================= -->
 	
 	<!-- About page begins ====================================================================== -->
@@ -230,6 +237,7 @@ www.typeandgrids.c
 			
 			<div id="guestbook">
 				<h3>Guestbook</h3>
+					<p>Submit your information for verification. Once I verify your post, it will show in the Guestbook.</p>
 					<div class="five columns" id="nameBlock">
 						Display Name: <input type="text" name="name" id="name" maxlength="22">
 						<div class="error">
@@ -271,13 +279,13 @@ www.typeandgrids.c
 					Minor: Computer Science
 				</p>
 				<p>
-					Current GPA: 3.83 / 4.0
+					Current GPA: 3.79 / 4.0
 				</p>
 				<p>
-					In Major GPA: 3.89 / 4.0
+					In Major GPA: 3.84 / 4.0
 				</p>
 				<p>
-					Member of Univeristy Honors: Fall 2012, Spring 2013, Fall 2013
+					Member of Univeristy Honors: Fall 2012 - Spring 2014
 				</p>
 			</div>
 			
@@ -439,7 +447,7 @@ range = 0;
 			$('#guestbook').find('#name').attr('disabled','disabled');
 			$('#guestbook').find('#email').attr('disabled','disabled');
 			$('#guestbook').find('#message').attr('disabled','disabled');
-			$('#posts').find('h3').after(formatPost(name, "<?php echo date('g:i M j', time() - 10800)?>", message));
+			//$('#posts').find('h3').after(formatPost(name, "<?php echo date('g:i M j', time() - 10800)?>", message));
 		  }
 
 		  //$('.spinner').fadeOut('fast');

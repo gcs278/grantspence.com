@@ -4,7 +4,7 @@
 	if(isset($_GET['range'])) {
 		$range = intval($_GET['range']);
 		$range = $range * 5;
-		$query = "SELECT * FROM guestbook ORDER BY timestamp desc LIMIT 5 OFFSET $range";
+		$query = "SELECT * FROM guestbook WHERE verified ORDER BY timestamp desc LIMIT 5 OFFSET $range";
 		$results = DB::query($query);
 
 		$displayPosts = array();
@@ -14,7 +14,7 @@
 				'date' => $date,
 				'message' => $post['message']));
 		}
-
+		
 		echo json_encode($displayPosts);
 	}
 ?>
