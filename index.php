@@ -83,131 +83,6 @@ www.typeandgrids.c
 		<hr />
 	</header>
 	<!-- Header ends ============================================================================ -->
-
-	<!-- Work page begins ======================================================================= -->
-<!-- 	<div id="work">
-	
-		<div id="overview" class="sixteen columns">
-			<h3>Junior in honors studying computer engineering</h3>
-			<hr />
-		</div>
-		
-		<div class="eight columns" id="col1"> -->
-		
-			<!-- Project begins ================================================================= -->
-<!-- 			<div class="project">
-				
-				<div class="projectThumbnail">
-					<svg class="thumbnailMask"></svg>
-					<div class="projectThumbnailHover">
-						<h4>Virginia Tech</h4>
-						<h5>Fall 2011 - Spring 2015</h5>
-					</div>
-					
-					<img src="images/projects/vt.png" alt="Project 01" class="thumbnailImage" />
-				</div>
-				
-				<div class="projectInfo">
-					<h4>Virginia Tech</h4>
-					<div class="projectNavCounter"></div>
-					<div class="projectNav">
-						<div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/project_01/index.html'">View full-size</button></div>
-						<div class="projectNavClose"><button class="closeButton">Close</button></div>
-						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
-					</div>
-					<ul>
-						<li><strong>Attended:</strong> Fall 2011 - Spring 2015 (Anticipated)</li>
-						<li><strong>Overall GPA:</strong> 3.83 / 4.0</li>
-						<li><strong>In-Major GPA:</strong> 3.9 / 4.0</li>
-						<li><strong>Major:</strong> Computer Engineering (CPE)</li>
-						<li><strong>Minor:</strong> Computer Science (CS)</li>
-						<li><strong>Class Ranking:</strong> 12 of 145</li>
-					</ul>
-					<p>
-						
-					</p>
-				</div>
-				
-			</div> -->
-			<!-- Project ends =================================================================== -->
-			
-			<!-- Project begins ================================================================= -->
-<!-- 			<div class="project">
-				
-				<div class="projectThumbnail">
-					<svg class="thumbnailMask"></svg>
-					<div class="projectThumbnailHover">
-						<h4>D.o.D SMART Scholarship</h4>
-						<h5>Deptment of the Navy</h5>
-					</div>
-					<img src="images/projects/marines.png" alt="Project 02" class="thumbnailImage" />
-				</div>
-				
-				<div class="projectInfo">
-					<h4>SMART Scholarship</h4>
-					<div class="projectNavCounter"></div>
-					<div class="projectNav">
-						<div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/project_02/index.html'">View video</button></div>
-						<div class="projectNavClose"><button class="closeButton">Close</button></div>
-						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
-					</div>
-					
-					<p>
-						The Science, Mathematics And Research for Transformation (SMART) Scholarship for Service Program is an opportunity for students pursuing an undergraduate or graduate degree in Science, Technology, Engineering, and Mathematics (STEM) disciplines to receive a full scholarship and be gainfully employed upon degree completion. 
-					</p>
-					<ul>
-						<li><strong>Supporting Department:</strong> Navy</li>
-						<li><strong>Supporting Facility:</strong> MARCORSYSCOM</li>
-						<li><strong>Position:</strong> Engineer</li>
-						<li><strong>Year Awarded:</strong> Fall 2013</li>
-					</ul>
-				</div>
-				
-			</div> -->
-			<!-- Project ends =================================================================== -->
-			
-			<!-- Project begins ================================================================= -->
-<!-- 			<div class="project">
-				
-				<div class="projectThumbnail">
-					<svg class="thumbnailMask"></svg>
-					<div class="projectThumbnailHover">
-						<h4>PD ALTESS</h4>
-						<h5>Deptment of the Army</h5>
-					</div>
-					<img src="images/projects/Army.png" alt="Project 03" class="thumbnailImage" />
-				</div>
-					
-				<div class="projectInfo">
-					<h4>PD ALTESS Intern</h4>
-					<div class="projectNavCounter"></div>
-					<div class="projectNav">
-						<div class="projectNavEnlarge"><button class="enlargeButton">View full-size</button></div>
-						<div class="projectNavClose"><button class="closeButton">Close</button></div>
-						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
-					</div>
-					<p>
-						Assist the Army with enterprise network configurations and operation. 
-						Monitor systems for health, throughput, and overall network utilization.
-					</p>
-					<ul>
-						<li><strong>Position:</strong> Network Engineer</li>
-						<li><strong>Dates:</strong> May 2012 - Present</li>
-					</ul>
-				</div>
-				
-			</div> -->
-			<!-- Project ends =================================================================== -->
-			
-			
-	<!-- 	</div> -->
-		
-		<!-- Even numbered projects are dynamically moved into this second column via JS -->
-<!-- 		<div class="eight columns" id="col2">
-		</div>
-	
-	</div> -->
-	<!-- Work page ends ========================================================================= -->
 	
 	<!-- About page begins ====================================================================== -->
 	<div id="about">
@@ -285,7 +160,7 @@ www.typeandgrids.c
 					In Major GPA: 3.84 / 4.0
 				</p>
 				<p>
-					Member of Univeristy Honors: Fall 2012 - Spring 2014
+					Member of University Honors: Fall 2012 - Spring 2014
 				</p>
 			</div>
 			
@@ -295,7 +170,7 @@ www.typeandgrids.c
 				Professional experience in enterprise system and networking:
 				<ul class="disc">
 					<li>Over a year of experience in an Department of Defense enterprise data center</li>
-					<li>Developed knowledge of enterprise systems and networing</li>
+					<li>Developed knowledge of enterprise systems and networking</li>
 					<li>Cisco, Juniper, Extreme IOS</li>
 					<li>Powershell / Bash Scripting</li>
 					<li>Switching</li>
@@ -306,7 +181,7 @@ www.typeandgrids.c
 			
 			<h4>Software Engineering</h4>
 			<p>
-				Advanded knowledge of the following languages:
+				Advanced knowledge of the following languages:
 				<ul class="disc">
 					<li>Java</li>
 					<li>Embedded C, C++, C#</li>
