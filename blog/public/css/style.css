@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5 {
 	display: table;
 }
 
+.active {
+	color: #980000 !important;
+}
+
 li {
 	list-style: none;
 	list-style-image: none; 
@@ -127,9 +131,10 @@ a:hover {
 .code {
 	opacity: 0.5;
 	display: inline;
-	font-size: 38px;
 }
-
+h1.code {
+	font-size: 38px !important;
+}
 .h_left {
 	padding-left: 100px;
 	padding-top: 25px;
@@ -164,9 +169,16 @@ a:hover {
 	text-decoration: none;
 }
 
+.toggler {
+	cursor: hand;
+}
 
 #links h1.code {
 	color: #FAFAFA !important;	
+}
+
+#mbike_img {
+	max-width: 225px !important;
 }
 
 #container_left img {
