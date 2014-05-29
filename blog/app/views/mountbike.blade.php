@@ -42,10 +42,8 @@
 
 
 <div id="content">
-
-        <div class="column">
-
-                <div id="container_left">
+        <div class="col-md-9 col-centered">
+                <div id="container_left" class="col-sm-3 hidden-xs">
                         <?php
                         	echo HTML::image('img/mbike/mbike.jpg', 'Mountain Biking', array('id'=>'mbike_img'));
                         ?>
@@ -63,18 +61,50 @@
                         </div>
 
                 </div>
-                <div id="container_right">
+                <div id="container_right" class="col-sm-9">
                         <div class="h_left">
                                 <h1 class="code">[</h1>
                                 <h2>MOUNTAIN BIKING</h2>
                                 <h1 class="code">]</h1>
                         </div>
-                        <div id="map-canvas"></div>
-                        <div class="p_left">
+                       <!-- <div id="map-canvas"></div> -->
+                        <div class="p_left nojust">
                        		<h3 class="code toggler" id="gateway5_11_14" >+</h3>
-							<a id="gateway5_11_14">Gateway Trail 5/11/14</a>
-							<p>
-								<div id="gateway5_11_14_p" style="display:none">
+					<a id="gateway5_11_14">Gateway Trail 5/11/14</a>
+					<div class="mbikedetail">	
+						<div class="col-sm-2">
+							<strong>Location:</strong>
+						</div>
+						<div class="col-sm-10">
+							Pandapas Pond, Blacksburg, VA
+						</div>
+					</div>
+					<div class="mbikedetail">
+						<div class="col-sm-2">
+							<strong>Difficulty:</strong>
+						</div>
+						<div class="col-sm-10">
+							Advanced
+						</div>
+					</div>
+					<div class="mbikedetail">
+						<div class="col-sm-2">
+							<strong>Milage:</strong>
+						</div>
+						<div class="col-sm-10">
+							7.69 mi
+						</div>
+					</div>
+					<div class="mbikedetail last">
+						<div class="col-sm-2">
+							<strong>Terrain:</strong>
+						</div>
+						<div class="col-sm-10 last">
+							&plusmn;800 feet
+						</div>
+					</div>
+					<p>
+					<div id="gateway5_11_14_p">
 									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.21.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.21_s.jpg" alt="" /></a>
 
 									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.31.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.31_s.jpg" alt="" /></a>
@@ -97,8 +127,38 @@
 					<div class="p_left">
                        		<h3 class="code toggler" id="jacobs_ladder_5_12_14" >+</h3>
 							<a id="jacobs5_11_14">Jacobs Ladder 5/12/14</a>
+                                        <div class="mbikedetail">
+                                                <div class="col-sm-2">
+                                                        <strong>Location:</strong>
+                                                </div>
+                                                <div class="col-sm-10">
+							Pandapas Pond, Blacksburg, VA
+                                                </div>
+                                        </div>
+                                        <div class="mbikedetail">
+                                                <div class="col-sm-2">                                                        <strong>Difficulty:</strong>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                        Advanced
+                                                </div>
+                                        </div>
+                                        <div class="mbikedetail">
+                                                <div class="col-sm-2">
+                                                        <strong>Milage:</strong>                                                </div>
+                                                <div class="col-sm-10">
+                                                        6.72 mi
+                                                </div>
+                                        </div>
+                                        <div class="mbikedetail last">
+                                                <div class="col-sm-2">
+                                                        <strong>Terrain:</strong>
+                                                </div>
+                                                <div class="col-sm-10 last">
+                                                        &plusmn;900 feet
+                                                </div>
+                                        </div>
 							<p>
-								<div id="jacobs_ladder_5_12_14_p" style="display:none">
+								<div id="jacobs_ladder_5_12_14_p">
 									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/jacobs_ladder_5_12_14/2014-05-12_12.47.30.jpg"><img src="img/mbike/jacobs_ladder_5_12_14/2014-05-12_12.47.30_s.jpg" alt="" /></a>
 
 									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/jacobs_ladder_5_12_14/2014-05-12_12.47.43.jpg"><img src="img/mbike/jacobs_ladder_5_12_14/2014-05-12_12.47.43_s.jpg" alt="" /></a>
@@ -118,7 +178,6 @@
                 </div>
         </div>
 
-</div>
 
 <script type="text/javascript">
 	$(document).ready(function() {

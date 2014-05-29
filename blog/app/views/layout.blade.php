@@ -1,64 +1,88 @@
 <html>
 	<head>
-		<title>GrantSpence.com</title>
+		<title>Grant Spence - Computer Engineer</title>
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 	<!--	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta charset="UTF-8">
+		<meta name="description" content="Grant Spence Computer Engineer">
+		<meta name="keywords" content="Grant Spence, Virginia Tech, Mountain Biking">
+		<meta name="author" content="Grant Spence">
 	</head>
     <body>
+
 	<div id="page">
 		<div id="upper_nav">
-			<div class="column">
-			<div id="logo">
-				<a href="/">Grant Spence</a>
-			</div>          
-					
-			<div id="school">
-			<?php                   
-				echo HTML::image('img/VirginiaTech.png', 'Grant Spence');
-			?>                      
-			</div>                          
+			<div class="col-md-9 col-centered full">
+				<div class="logo">
+					<a href="/">Grant Spence</a>
+				</div>          
+						
+				<div id="school">
+				<?php                   
+					echo HTML::image('img/VirginiaTech.png', 'Grant Spence');
+				?>                      
+				</div>                          
 			</div>                                  
 		</div>
 		<div id="lower_nav">                    
-			<div class="column">            
-			<ul id="nav_list_wrap">
+			<div class="col-md-9 col-centered full">            
+				<ul id="nav_list_wrap">
+					<li class="nav_link">   
+						<a href="/" class="
+						<?php
+							if ( Request::is('/') )
+								echo 'active'
+						?>">Home</a>
+					</li>  
 
-				<li class="nav_link">   
-					<a href="/" class="
-					<?php
-						if ( Request::is('/') )
-							echo 'active'
-					?>">Home</a>
-				</li>  
+					<li class="nav_link">   
+						<a href="/resume" class="
+						<?php
+							if ( Request::is('resume') )
+								echo 'active'
+						?>">Resume</a>
+					</li>   
 
-				<li class="nav_link">   
-					<a href="/">Resume</a>
-				</li>   
+					<li class="nav_link">
+						<a href="/development" class="
+						<?php
+							if ( Request::is('development') )
+								echo 'active'
+						?>">Development</a>
+					</li>   
 
-				<li class="nav_link">
-					<a href="/">Development</a>
-				</li>   
+					<li class="nav_link">
+						<a href="/mountbike" class="
+						<?php
+							if ( Request::is('mountbike') )
+								echo 'active'
+						?>">Mountain Biking</a>
+					</li>  			
 
-				<li class="nav_link">
-					<a href="/mountbike" class="
-					<?php
-						if ( Request::is('mountbike') )
-							echo 'active'
-					?>">Mountain Biking</a>
-				</li>  			
-
-			</ul>
+				</ul>
 			</div>
 		</div>
 
 		@yield('content')
 
+		<div class="clearfooter"></div>
+		<footer>
+			<div class="col-md-9 col-centered full">
+				<!--<div class="logo" id="logo_bottom">
+					<a href="/">Grant Spence</a>
+				</div> -->    
+				<div id="copyright">
+					Developed and Designed by Grant Spence &copy; 2014
+				</div>
+			</div>
+		</footer>
+
 	</div>
-	
+	</body>
 <script>
 $(document).ready( function () {
         var topLower = $('#lower_nav').offset().top;

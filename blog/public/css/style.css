@@ -25,7 +25,12 @@ h1, h2, h3, h4, h5 {
 	text-transform: uppercase;
 }
 
-#logo {
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.logo {
 	font-size: 25px;
 	font-weight: 300!important;
 	text-transform: uppercase;
@@ -67,6 +72,7 @@ h1, h2, h3, h4, h5 {
 #nav_list_wrap {
 	float: right;
 	height: 100%;
+	margin-bottom: 0px !important;
 	display: table;
 }
 
@@ -74,16 +80,23 @@ h1, h2, h3, h4, h5 {
 	color: #980000 !important;
 }
 
+.unjust {
+	text-align: left !important;
+}
 li {
 	list-style: none;
 	list-style-image: none; 
 
 }
 
+.full {
+	height: 100% !important;
+}
+
 .column {
 	width: 1024px;
 	margin: 0 auto;
-	height: 100%;
+	height: auto;
 	padding: 0;
 }
 
@@ -111,15 +124,21 @@ a:hover {
 }
 
 #content.column {
-	height: 100%;
+	height: auto;
+}
+
+.col-two {
+
 }
 
 #container_right {
-	display:block;
-	width: 75%;
 	min-height: 100%;
 	background-color: #F9F9F9;
 	margin:0 0 0 auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 50px;
 }
 
 
@@ -132,26 +151,58 @@ a:hover {
 	opacity: 0.5;
 	display: inline;
 }
+
+.bullet {
+	display: block;
+	margin-bottom: -8px !important;
+	margin-top: -4px !important;
+	padding-left: 30px;
+}
+
+.mbikedetail {
+	display: block;
+	padding-left: 30px;
+}
+
+.plus {
+	padding-left:15px;
+}
+
+.two {
+	display: inline !important;
+}
+
+.space {
+	height: 30px;
+}
+
+.last {
+	margin-bottom: 15px !important;
+}
+
 h1.code {
 	font-size: 38px !important;
 }
+
+.bullet h1,h2,h3,h4,h5,h6 {
+}
+
 .h_left {
-	padding-left: 100px;
+	padding-left: 75px;
 	padding-top: 25px;
 }
 
 .p_left {
-	padding-left: 100px;
+	text-align: justify;
+	padding-left: 75px;
 	letter-spacing: 0.1px !important;
 	padding-top: 15px;
+	padding-right: 75px;
 }
 
 #container_left {
-	float: left;
-	display: block;
-	width: 25%;
-	min-height: 100%;
-	margin: 0 0 auto;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 #links h3 {
@@ -182,8 +233,53 @@ h1.code {
 }
 
 #container_left img {
-	max-width: 200px;
+	width: 90%;
+	max-width: 350px;
+	height: auto;
 	margin-top: 25px;
 	border: solid 2px #9C9C9C;
 	opacity: 0.9;
 }
+
+.menworking {
+	max-width: 50%;
+	margin-left: auto;	
+	margin-right: auto;
+	display : block;
+}
+
+footer {
+	display: table;
+	height: 50px;
+	margin-top: 0px;
+	background-color: #F9F9F9;
+	width: 100%;	
+	z-index: 1000;
+	border-top: 1px solid #9C9C9C;
+}
+
+html, body {
+	height: 100%;
+}
+
+#logo_bottom {
+	top: 45% !important;
+}
+
+#copyright {
+	font-weight: 300;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: right;
+	color: #404039;
+	top: 50%;
+	float: right;
+        position: relative;
+        -webkit-transform: translateY(-50%);
+}
+
+.clearfooter {
+	height: 0px;
+	clear: both;
+}
+	

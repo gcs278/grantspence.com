@@ -2,11 +2,11 @@
 
 @section('content')
 <div id="content">
-	<div class="column">
+        <div class="col-md-9 col-centered">
 
-		<div id="container_left">
+                <div id="container_left" class="col-sm-3 hidden-xs">
 			<?php
-			echo HTML::image('img/my_pic_crop.png', 'Grant Spence');
+				echo HTML::image('img/my_pic_crop.png', 'Grant Spence');
 			?>
 			<div id="links">
 				<h1 class="code">+</h1>
@@ -22,7 +22,7 @@
 			</div>
 			
 		</div>
-		<div id="container_right">
+         <div id="container_right" class="col-sm-9">
 			<div class="h_left">
 				<h1 class="code">[</h1>
 				<h2>WELCOME</h2>
@@ -30,17 +30,46 @@
 			</div>
 
 			<div class="p_left">
-				<p>Welcome to the most pretigous site on the internet. GrantSpence.com is the premier spot for seeing what's up.</p>
+				Welcome to GrantSpence.com - an experimental website developed and designed by yours truly, Grant Spence. 
+				I am a Computer Engineering student at Virginia Tech and this website is a developmental ground for myself to push ideas and display them for the world to see.
 			</div>
 
 			<div class="h_left">
 				<h1 class="code">[</h1>
-				<h2>MY LIFE</h2>
+				<h2>UNDER CONSTRUCTION</h2>
 				<h1 class="code">]</h1>
 			</div>
 
 			<div class="p_left">
-				<p>I attempt to live a interesting, fulfilling life that never lets me get bored. Mountain biking, surfing, and coding has my life booked full.</p>
+				GrantSpence.com is currently in development. Feel free to check out the Resume, Development, and Mountain Biking sections.<br><br>
+				<?php
+				echo HTML::image('img/menworking.png','Men Working',array('class'=>'menworking'));
+				?>
+				<div style="text-align:center;">
+				<br>
+				<strong>Please come back to see the progress!</strong>
+				</div>
+			<!--	<div class="row plus">
+					<h3 class="code">+</h3>
+					<h3 style="display:inline">Check out the resume section</h3>
+					<?php
+                                                //echo HTML::image('img/my_pic_crop.png', 'Grant Spence');
+                                        ?>
+				</div>
+
+				<div class="row plus">
+					<?php
+						//echo HTML::image('img/my_pic_crop.png', 'Grant Spence');
+					?>
+
+					<h3 class="code">+</h3>
+					<h3 style="display:inline">See what I've been developing</h3>
+				</div>
+
+				<div class="row plus">
+					<h3 class="code">+</h3>
+					<h3 style="display:inline">Keep up with my mountain biking expeditions</h3>
+				</div>-->
 			</div>
 
 		</div>
