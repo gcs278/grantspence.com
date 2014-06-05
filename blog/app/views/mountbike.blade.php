@@ -67,63 +67,72 @@
                                 <h2>MOUNTAIN BIKING</h2>
                                 <h1 class="code">]</h1>
                         </div>
+			<div class="p_left">
+			<h3>COMING SOON!</h3>
+			</div>
                        <!-- <div id="map-canvas"></div> -->
-                        <div class="p_left nojust">
-                       		<h3 class="code toggler" id="gateway5_11_14" >+</h3>
-					<a id="gateway5_11_14">Gateway Trail 5/11/14</a>
-					<div class="mbikedetail">	
-						<div class="col-sm-2">
-							<strong>Location:</strong>
-						</div>
-						<div class="col-sm-10">
-							Pandapas Pond, Blacksburg, VA
-						</div>
-					</div>
-					<div class="mbikedetail">
-						<div class="col-sm-2">
-							<strong>Difficulty:</strong>
-						</div>
-						<div class="col-sm-10">
-							Advanced
-						</div>
-					</div>
-					<div class="mbikedetail">
-						<div class="col-sm-2">
-							<strong>Milage:</strong>
-						</div>
-						<div class="col-sm-10">
-							7.69 mi
-						</div>
-					</div>
-					<div class="mbikedetail last">
-						<div class="col-sm-2">
-							<strong>Terrain:</strong>
-						</div>
-						<div class="col-sm-10 last">
-							&plusmn;800 feet
-						</div>
-					</div>
-					<p>
-					<div id="gateway5_11_14_p">
-									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.21.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.21_s.jpg" alt="" /></a>
-
-									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.31.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.31_s.jpg" alt="" /></a>
-
-									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.34.00.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_12.34.00_s.jpg" alt="" /></a>
-
-									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.34.07.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_12.34.07_s.jpg" alt="" /></a>
-									
-									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.25.28.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_13.25.28_s.jpg" alt="" /></a>
-
-									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.38.37.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_13.38.37_s.jpg" alt="" /></a>
-
-									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.53.52.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_13.53.52_s.jpg" alt="" /></a>
-
-									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.54.08.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_13.54.08_s.jpg" alt="" /></a>
+                   <!--     <div class="p_left nojust bikepost">
+                        	 <div class="row">
+                       			<h3 class="code toggler" id="gateway5_11_14" >+</h3>
+								<a id="gateway5_11_14"><h4 style="display:inline">Gateway Trail 5/11/14</h4></a>
+							</div> 
+							<div class="row">
+								<div class="col-sm-2 newcol">
+										<div class="mbikedetails">
+											<div class="mbikedetail row nopadding">
+												<p>
+													Advanced
+												</p>
+											</div>
+											<div class="mbikedetail row nopadding">
+												<p>
+													7.69<br>
+													<strong>MI</strong>
+												</p>
+											</div>
+											<div class="mbikedetail  row nopadding">
+												<p>
+													&plusmn;800<br>
+													<strong>FT</strong>
+												</p>
+											</div>
+										</div>
 								</div>
-							</p>
-					</div>
+								<div class="col-sm-5 nopadding">
+									<div id="gateway5_11_14_p">
+										<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.21.jpg" rel="gallery1"><img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.21_s.jpg" class="mbikeimg" alt="" /></a>
+										
+										<div class="hidden">
+											<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.31.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.31_s.jpg" alt="" /></a>
 
+											<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.34.00.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_12.34.00_s.jpg" alt="" /></a>
+
+											<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.34.07.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_12.34.07_s.jpg" alt="" /></a>
+											
+											<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.25.28.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_13.25.28_s.jpg" alt="" /></a>
+
+											<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.38.37.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_13.38.37_s.jpg" alt="" /></a>
+
+											<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.53.52.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_13.53.52_s.jpg" alt="" /></a>
+
+											<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.54.08.jpg"><img src="img/mbike/gateway_5_11_14/2014-05-11_13.54.08_s.jpg" alt="" /></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 nopadding">
+									<div class="mbikemap">
+										<img src="img/mbike/gateway_map.jpg" alt="Gateway Map"/>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="mbikenotes newcol">
+									<p>
+										Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and 
+									</p>
+								</div>
+							</div>
+					</div>
 					<div class="p_left">
                        		<h3 class="code toggler" id="jacobs_ladder_5_12_14" >+</h3>
 							<a id="jacobs5_11_14">Jacobs Ladder 5/12/14</a>
@@ -132,7 +141,7 @@
                                                         <strong>Location:</strong>
                                                 </div>
                                                 <div class="col-sm-10">
-							Pandapas Pond, Blacksburg, VA
+													Pandapas Pond, Blacksburg, VA
                                                 </div>
                                         </div>
                                         <div class="mbikedetail">
@@ -174,8 +183,8 @@
 									<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/jacobs_ladder_5_12_14/2014-05-12_13.05.11-2.jpg"><img src="img/mbike/jacobs_ladder_5_12_14/2014-05-12_13.05.11-2_s.jpg" alt="" /></a>
 								</div>
 							</p>
-					</div>
-                </div>
+					</div> -->
+                </div> 
         </div>
 
 

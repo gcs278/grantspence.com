@@ -159,9 +159,38 @@ a:hover {
 	padding-left: 30px;
 }
 
+.mbikedetails {
+	background-color:#eee;
+}
+
+.mbikedetails:first-child {
+}
+
 .mbikedetail {
-	display: block;
-	padding-left: 30px;
+	height: 70px;
+	line-height: 100%;
+	text-align: center;
+	display: table;
+	width: 100%;
+	border-left: 1px solid #9C9C9C;
+	border-right: 1px solid #9C9C9C;
+	border-top: 1px solid #9C9C9C;
+}
+
+.mbikedetail p {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 18px;
+	text-align: center;
+}
+.mbikedetail p strong {
+	font-size: 20px;
+	line-height: 100%;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
 
 .plus {
@@ -194,10 +223,10 @@ h1.code {
 
 .p_left {
 	text-align: justify;
-	padding-left: 75px;
+	margin-left: 75px;
 	letter-spacing: 0.1px !important;
 	padding-top: 15px;
-	padding-right: 75px;
+	margin-right: 75px;
 }
 
 #container_left {
@@ -228,8 +257,12 @@ h1.code {
 	color: #FAFAFA !important;	
 }
 
-#mbike_img {
-	max-width: 225px !important;
+.newcol {
+	padding: 0 0 0 0 !important;
+	margin-left: 20px;
+}
+
+.mbike_img {
 }
 
 #container_left img {
@@ -239,6 +272,45 @@ h1.code {
 	margin-top: 25px;
 	border: solid 2px #9C9C9C;
 	opacity: 0.9;
+}
+
+.bikepost {
+	
+}
+
+.hidden {
+	display: none;
+}
+
+.mbikemap img {
+	height: 210px; 
+	width: 100%;
+}
+
+.mbikenotes {
+	height: 100px;
+	background-color: #eee;
+	border-left: 1px solid #9C9C9C;
+	border-bottom: 1px solid #9C9C9C;
+	border-right: 1px solid #9C9C9C;
+	border-top :1px solid #9C9C9C;
+}
+
+.mbikenotes p {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+
+}
+
+.mbikemorepics {
+	height: 70px;
+	float: left;
+}
+
+.mbikeimg {
+	height: 210px;
+	width: auto;
 }
 
 .menworking {
