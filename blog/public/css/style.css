@@ -1,4 +1,4 @@
-@font-face {
+	@font-face {
 	font-family: VTFont;
 	src: url(Raleigh.ttf);
 }
@@ -121,6 +121,8 @@ a:hover {
 }
 
 #content {
+	background-image: url(../img/mbike/mbike2_large.jpg);
+	background-size: 100% auto;
 }
 
 #content.column {
@@ -134,6 +136,7 @@ a:hover {
 #container_right {
 	min-height: 100%;
 	background-color: #F9F9F9;
+	opacity: 0.8;	
 	margin:0 0 0 auto;
 	padding-top: 0px;
 	padding-right: 0px;
@@ -176,6 +179,11 @@ a:hover {
 	height: 30px;
 }
 
+.h_left hr {
+	margin-bottom: 0px !important;
+	margin-top: 2px !important;
+}
+
 .last {
 	margin-bottom: 15px !important;
 }
@@ -190,6 +198,7 @@ h1.code {
 .h_left {
 	padding-left: 75px;
 	padding-top: 25px;
+	padding-right: 75px;
 }
 
 .p_left {

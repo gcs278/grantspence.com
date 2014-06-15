@@ -24,9 +24,9 @@
 		</div>
 		<div id="container_right" class="col-sm-9">
 			<div class="h_left">
-				<h1 class="code">[</h1>
+				<!-- <h1 class="code">[</h1> -->
 				<h2>ABOUT ME</h2>
-				<h1 class="code">]</h1>
+				<!-- <h1 class="code">]</h1> -->
 			</div>
 
 			<div class="p_left">
@@ -36,13 +36,13 @@
 			</div>
 
 			<div class="h_left">
-				<h1 class="code">[</h1>
+				<!-- <h1 class="code">[</h1> -->
 				<h2>EDUCATION</h2>
-				<h1 class="code">]</h1>
+				<!-- <h1 class="code">]</h1> -->
 			</div>
 
 			<div class="p_left">
-				<h3 class="code">+</h3>
+				<!-- <h3 class="code">+</h3> -->
 				<h5 style="display:inline"><strong>Virginia Tech - Bachelor of Science, Computer Engineering (CPE)</strong></h5>
 				<div class="bullet">
 					<h3 class="code">-</h3>
@@ -61,7 +61,7 @@
 			</div>
 
 			<div class="p_left">
-				<h3 class="code">+</h3>
+				<!-- <h3 class="code">+</h3> -->
 				<h5 style="display:inline"><strong>Eastern Shore Community College - Associate of Science</strong></h5>
 				<div class="bullet">
 					<h3 class="code">-</h3>
@@ -75,9 +75,9 @@
 			</div>
 
 			<div class="h_left">
-				<h1 class="code">[</h1>
+				<!-- <h1 class="code">[</h1> -->
 				<h2>TECHINCAL SKILLS</h2>
-				<h1 class="code">]</h1>
+				<!-- <h1 class="code">]</h1> -->
 			</div>
 
 			<div class="p_left">

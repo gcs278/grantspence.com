@@ -2,6 +2,7 @@
 
 @section('content')
 <div id="content">
+	<div class="row">
         <div class="col-md-9 col-centered">
 
                 <div id="container_left" class="col-sm-3 hidden-xs">
@@ -12,10 +13,10 @@
 				<h1 class="code">+</h1>
 				<h3>LINKS</h3>
 				<ul>
-					<li>
+					<li>s
 						<a href="http://www.linkedin.com/pub/grant-spence/63/7a5/157/" target="_blank">LinkedIn</a>
 					</li>
-					<li>
+					<li>Ts
 						
 					</li>
 				</ul>
@@ -24,9 +25,10 @@
 		</div>
          <div id="container_right" class="col-sm-9">
 			<div class="h_left">
-				<h1 class="code">[</h1>
+				<!-- <h1 class="code">[</h1> -->
 				<h2>WELCOME</h2>
-				<h1 class="code">]</h1>
+				<hr>
+				<!-- <h1 class="code">]</h1> -->
 			</div>
 
 			<div class="p_left">
@@ -35,9 +37,10 @@
 			</div>
 
 			<div class="h_left">
-				<h1 class="code">[</h1>
+				<!-- <h1 class="code">[</h1> -->
 				<h2>UNDER CONSTRUCTION</h2>
-				<h1 class="code">]</h1>
+				<hr>
+				<!-- <h1 class="code">]</h1> -->
 			</div>
 
 			<div class="p_left">
@@ -73,6 +76,7 @@
 			</div>
 
 		</div>
+	</div>
 	</div>
 
 </div>
