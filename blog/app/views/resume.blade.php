@@ -26,6 +26,7 @@
 			<div class="h_left">
 				<!-- <h1 class="code">[</h1> -->
 				<h2>ABOUT ME</h2>
+				<hr>
 				<!-- <h1 class="code">]</h1> -->
 			</div>
 
@@ -38,6 +39,7 @@
 			<div class="h_left">
 				<!-- <h1 class="code">[</h1> -->
 				<h2>EDUCATION</h2>
+				<hr>
 				<!-- <h1 class="code">]</h1> -->
 			</div>
 
@@ -77,6 +79,7 @@
 			<div class="h_left">
 				<!-- <h1 class="code">[</h1> -->
 				<h2>TECHINCAL SKILLS</h2>
+				<hr>
 				<!-- <h1 class="code">]</h1> -->
 			</div>
 
@@ -162,9 +165,10 @@
 			</div>
 
 			<div class="h_left">
-				<h1 class="code">[</h1>
+				<!-- <h1 class="code">[</h1> -->
 				<h2>WORK EXPERIENCE</h2>
-				<h1 class="code">]</h1>
+				<hr>
+				<!-- <h1 class="code">]</h1> -->
 			</div>
 
 			<div class="p_left">
@@ -179,9 +183,10 @@
 			</div>
 
 			<div class="h_left">
-				<h1 class="code">[</h1>
+				<!-- <h1 class="code">[</h1> -->
 				<h2>Certifications</h2>
-				<h1 class="code">]</h1>
+				<hr>
+				<!-- <h1 class="code">]</h1> -->
 			</div>
 
 			<div class="p_left">

@@ -31,7 +31,7 @@
                 <div class="leftcontent container-fluid">
                     <div class="row nopadding">
                         <h1>Gateway Trail</h1>
-                        <!-- <hr> -->
+                        <hr>
                     </div>
                     <div class="row nopadding">
                         <div id="gateway5_11_14_p" class="thumbnails">
