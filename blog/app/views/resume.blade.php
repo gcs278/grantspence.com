@@ -84,7 +84,7 @@
 			</div>
 
 			<div class="p_left">
-				<h3 class="code">+</h3>
+				<!-- <h3 class="code">+</h3> -->
 				<h5 style="display:inline"><strong>Experienced with the following programming and hardware description languages:</strong></h5>
 
 				<div class="row">
@@ -123,7 +123,7 @@
 					</div>
 				</div>
 
-				<h3 class="code">+</h3>
+				<!-- <h3 class="code">+</h3> -->
 				<h5 style="display:inline"><strong>Knowledgeable in other areas of system administration: </strong></h5>
 
 				<div class="row">
@@ -173,11 +173,11 @@
 
 			<div class="p_left">
 				<div class="row plus">
-					<h3 class="code">+</h3>
+					<!-- <h3 class="code">+</h3> -->
 					<h5 style="display:inline">Network Engineer, PD ALTESS (U.S. Army), Radford VA May 2012 – March 2014</h5>
 				</div>
 				<div class="row plus">
-					<h3 class="code">+</h3>
+					<!-- <h3 class="code">+</h3> -->
 					<h5 style="display:inline">Software Engineer, Virginia Tech Transportation Institute, Blacksburg VA May 2013 - September 2014</h5>
 				</div>
 			</div>
@@ -191,11 +191,11 @@
 
 			<div class="p_left">
 				<div class="row plus">
-					<h3 class="code">+</h3>
+					<!-- <h3 class="code">+</h3> -->
 					<h5 style="display:inline">CompTIA’s Network+ August 2012</h5>
 				</div>
 				<div class="row plus">
-					<h3 class="code">+</h3>
+					<!-- <h3 class="code">+</h3> -->
 					<h5 style="display:inline">CompTIA’s Security+ July 2012</h5>
 				</div>
 			</div>

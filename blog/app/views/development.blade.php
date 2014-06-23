@@ -27,14 +27,14 @@
                                 <h2>DEVELOPMENT</h2>
                                 <h1 class="code">]</h1>
                         </div>
-                        <div class="p_left unjust">
-                                <h2 class="code" >+</h2>
+                        <div class="p_left unjust devpost">
+                                <!-- <h2 class="code" >+</h2> -->
                                 <h4 style="display: inline">ECE 4534: Automous Rover Project</h4>
                                 <iframe width="560" height="315" src="//www.youtube.com/embed/Imejnir2LBw?rel=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 
-		        <div class="p_left unjust">
-                                <h2 class="code" >+</h2>
+		        <div class="p_left unjust devpost">
+                                <!-- <h2 class="code" >+</h2> -->
                                 <h4 style="display: inline">VT Hacks: Hapbee IOS Application</h4>
                                 <iframe width="420" height="315" src="//www.youtube.com/embed/v-_qJB-Wpf0?rel=0" frameborder="0" allowfullscreen></iframe>
                         </div>  

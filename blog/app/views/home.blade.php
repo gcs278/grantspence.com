@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="content">
-	<div class="row">
+	<!-- <div class="row"> -->
         <div class="col-md-9 col-centered">
 
                 <div id="container_left" class="col-sm-3 hidden-xs">
@@ -13,10 +13,10 @@
 				<h1 class="code">+</h1>
 				<h3>LINKS</h3>
 				<ul>
-					<li>s
+					<li>
 						<a href="http://www.linkedin.com/pub/grant-spence/63/7a5/157/" target="_blank">LinkedIn</a>
 					</li>
-					<li>Ts
+					<li>
 						
 					</li>
 				</ul>
@@ -77,7 +77,7 @@
 
 		</div>
 	</div>
-	</div>
+	<!-- </div> -->
 
 </div>
 @stop

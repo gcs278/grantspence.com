@@ -342,7 +342,7 @@ h1.code {
 
 .bikepost {
 	padding-top: 10px;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 	min-height: 350px;
 }
 
@@ -363,6 +363,10 @@ h1.code {
 
 .bikecol {
 	min-height: 360px;	
+}
+
+.bikecol h2 {
+	margin-bottom: 10px !important;
 }
 
 .hidden {
@@ -405,6 +409,10 @@ h1.code {
 	margin-left: auto;	
 	margin-right: auto;
 	display : block;
+}
+
+.devpost h1, h2, h3, h4 {
+	margin-bottom: 10px;
 }
 
 footer {
