@@ -172,7 +172,7 @@
 			</div>
 
 			<div class="p_left">
-				<div class="row plus">
+				<div class="row plus plusgap">
 					<!-- <h3 class="code">+</h3> -->
 					<h5 style="display:inline">Network Engineer, PD ALTESS (U.S. Army), Radford VA May 2012 – March 2014</h5>
 				</div>
@@ -190,7 +190,7 @@
 			</div>
 
 			<div class="p_left">
-				<div class="row plus">
+				<div class="row plus plusgap">
 					<!-- <h3 class="code">+</h3> -->
 					<h5 style="display:inline">CompTIA’s Network+ August 2012</h5>
 				</div>
