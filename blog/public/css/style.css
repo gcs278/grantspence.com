@@ -72,7 +72,8 @@ h1, h2, h3, h4, h5 {
     padding-left: 1px;
 }
 .map img {
-    max-width: 100%;
+    width: 100%;
+
 }
 .hidden {
     display: none;
@@ -84,9 +85,10 @@ h1, h2, h3, h4, h5 {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     color: #404039;
     height: 25px;
-    top: 60%;
+    top: 30px;
     float: left;
     position: relative;
+    transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
 #school {
@@ -95,9 +97,10 @@ h1, h2, h3, h4, h5 {
     text-align: right;
     color: #993300;
     height: 25px;
-    top: 50%;
+    top: 30px;
     float: right;
     position: relative;
+    transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
 #school img {
@@ -397,6 +400,7 @@ html, body {
     float: right;
     position: relative;
     -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .clearfooter {
     height: 0px;

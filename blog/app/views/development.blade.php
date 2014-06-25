@@ -53,7 +53,7 @@
                         </p>
                     </div>
                     <div class="col-md-11 col-centered">
-                            <iframe width="560" height="315" src="//www.youtube.com/embed/Imejnir2LBw?rel=0" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="560" height="315" style="max-width:100%" src="//www.youtube.com/embed/Imejnir2LBw?rel=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@
                         </p>
                     </div>
                     <div class="col-md-8 col-centered">
-                        <iframe width="420" height="315" src="//www.youtube.com/embed/v-_qJB-Wpf0?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="420" height="315" style="max-width:100%" src="//www.youtube.com/embed/v-_qJB-Wpf0?rel=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
