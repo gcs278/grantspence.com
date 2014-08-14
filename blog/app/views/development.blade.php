@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
 <div id="content">
-    <div class="col-md-9 col-centered">
+    <div class="col-md-9 col-centered full">
         <div id="container_left" class="col-sm-3 hidden-xs">
             <?php echo HTML::image( 'img/development.jpg', 'Development', array( 'id'=>'mbike_img')); ?>
             <div id="links">
@@ -28,10 +28,10 @@
                     <div class="row head">
                         <div class="row titles">
                             <div class="col-md-8">
-                                <h2>ECE 4534: Automous Rover Project</h2>
+                                <h2>ECE 4534: Automous Rover</h2>
                             </div>
-                            <div class="col-md-4" style="position: absolute; bottom: 0; right: 0;">
-                                <h3 class="text-right">May 12th, 2014</h3>
+                            <div class="col-md-4 date">
+                                <h3 class="text-right-md text-left-sm text-left-xs text-right-lg">May 12th, 2014</h3>
                             </div>
                         </div>
                         <hr>
@@ -63,8 +63,8 @@
                             <div class="col-md-8">
                                 <h2>VT Hacks: Hapbee IOS Application</h2>
                             </div>
-                            <div class="col-md-4" style="position: absolute; bottom: 0; right: 0;">
-                                <h3 class="text-right">April 20th, 2014</h3>
+                            <div class="col-md-4 date">
+                                <h3 class="text-right-md text-left-sm text-left-xs text-right-lg">April 20th, 2014</h3>
                             </div>
                         </div>
                         <hr>

@@ -21,7 +21,8 @@ Route::get('/', function()
 	return View::make('home');
 });
 
-Route::get('/{id}', function($id)
-{
-	return View::make($id);
-});
+Route::get('/', 'BaseController@home');
+Route::get('/mountbike', 'BaseController@mountbike');
+Route::get('/development', 'BaseController@development');
+Route::get('/resume', 'BaseController@resume');
+

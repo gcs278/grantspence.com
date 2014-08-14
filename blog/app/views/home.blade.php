@@ -1,9 +1,10 @@
 @extends('layout')
 
 @section('content')
+<div class="clearer"></div>
 <div id="content">
-	<!-- <div class="row"> -->
-        <div class="col-md-9 col-centered">
+	<!-- <div class="row"> -->	
+        <div class="col-md-9 col-centered full">
 
                 <div id="container_left" class="col-sm-3 hidden-xs">
 			<?php

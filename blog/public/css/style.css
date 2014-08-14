@@ -25,7 +25,9 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     transition: 250ms linear all;
     font-family:'SSP_Light', sans-serif;
-    /*	font-family: source-sans-pro, helvetica, arial, sans-serif;*/
+    min-height: 100%;
+    position: relative;
+    /*  font-family: source-sans-pro, helvetica, arial, sans-serif;*/
 }
 #upper_nav {
     width: 100%;
@@ -60,6 +62,7 @@ h1, h2, h3, h4, h5 {
 .col-centered {
     float: none;
     margin: 0 auto;
+    overflow: auto;
 }
 .nopadding {
     padding: 0 !important;
@@ -73,7 +76,7 @@ h1, h2, h3, h4, h5 {
 }
 .map img {
     width: 100%;
-
+    max-height: 100%; 
 }
 .hidden {
     display: none;
@@ -160,6 +163,7 @@ a:hover {
 #content {
     /*background-image: url(../img/mbike/carvins_large.jpg);*/
     background-size: 100% auto;
+    overflow: auto;
 }
 #content.column {
     height: auto;
@@ -169,14 +173,14 @@ a:hover {
 #container_right {
     min-height: 100%;
     background-color: #F9F9F9;
-    /*opacity: 0.8;	*/
+    /*opacity: 0.8; */
     margin:0 0 0 auto;
     padding-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
     padding-bottom: 50px;
 }
-#container_right h2, h1{
+#container_right h2, h1 {
     display: inline;
     padding-top: 25px;
 }
@@ -219,7 +223,7 @@ a:hover {
     padding-left:15px;
 }
 .plusgap {
-	padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 .two {
     display: inline !important;
@@ -311,7 +315,7 @@ h1.code {
     margin-bottom: 10px;
 }
 .bikecol {
-    min-height: 360px;
+    /*min-height: 360px;*/
 }
 .bikecol h2 {
     margin-bottom: 10px !important;
@@ -365,19 +369,140 @@ h1.code {
     margin-bottom: 10px;
 }
 .devpost li {
-	padding-bottom: 10px;
-	padding-right: 40px;
+    padding-bottom: 10px;
+    padding-right: 40px;
 }
-
 .vthacks {
-	background-image: url(../img/vthacks.png);
+    background-image: url(../img/vthacks.png);
     background-size: 100% auto;
-
 }
-
+.clearer {
+    clear:both;
+}
+span.text-content {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    height: calc(100% - 10px);
+    left: 0;
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc(100% - 10px);
+    opacity: 0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+span.text-content span {
+    padding-left: 5px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.thumbnails a:hover span.text-content {
+    opacity: 1;
+}
+#back-top {
+    position: fixed;
+    display: none;
+    bottom: 50px;
+    right: 60px;
+}
+#back-top a {
+    width: 50px;
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bbb;
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover {
+    color: #000;
+}
+/* arrow icon (span tag) */
+ #back-top span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 7px;
+    background: url(../img/up-arrow.png) no-repeat center center;
+    /* rounded corners */
+    /*    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;*/
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover span {
+    background-color: #888;
+}
+.date h3 {
+    margin-top: 7px !important;
+    position: relative; bottom: 0; right: 0;
+}
+/* Text Align classes */
+ @media (max-width: 767px) {
+    .text-left-xs {
+        text-align: left;
+    }
+    .text-right-xs {
+        text-align: right;
+    }
+    .text-center-xs {
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .text-left-sm {
+        text-align: left;
+    }
+    .text-right-sm {
+        text-align: right;
+    }
+    .text-center-sm {
+        text-align: center;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .text-left-md {
+        text-align: left;
+    }
+    .text-right-md {
+        text-align: right;
+    }
+    .text-center-md {
+        text-align: center;
+    }
+}
+@media (min-width: 1200px) {
+    .text-left-lg {
+        text-align: left;
+    }
+    .text-right-lg {
+        text-align: right;
+    }
+    .text-center-lg {
+        text-align: center;
+    }
+}
 footer {
     display: table;
     height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     margin-top: 0px;
     background-color: #F9F9F9;
     width: 100%;
@@ -386,6 +511,8 @@ footer {
 }
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 #logo_bottom {
     top: 45% !important;

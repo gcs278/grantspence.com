@@ -41,7 +41,7 @@ body {
 
 
 <div id="content">
-    <div class="col-md-9 col-centered">
+    <div class="col-md-9 col-centered full">
         <div id="container_left" class="col-sm-3 hidden-xs">
             <?php echo HTML::image( 'img/mbike/mbike.jpg', 'Mountain Biking', array( 'id'=>'mbike_img')); ?>
             <div id="links">
@@ -65,23 +65,27 @@ body {
                 <h1 class="code">]</h1>
             </div> -->
 
+<?php
+    echo $bikePosts;    
+?>
+
             <!-- ---------------------------- Begining of a Bike Post -------------------------------------- -->
             <div class="container-fluid bikepost">
                 <div class="row head">
                     <div class="row titles">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-12">
                             <h1>Burke Farm</h1>
                         </div>
-                        <div class="col-md-6" style="position: absolute; bottom: 0; right: 0;">
+                        <div class="col-md-6 col-xs-12" style="position: absolute; bottom: 0; right: 0;">
                             <h3 class="text-right">May 31, 2014</h3>
                         </div>
                     </div>
                     <hr>
                 </div>
                 <div class="row nopadding">
-                    <div id="gateway5_11_14_p" class="thumbnails">
-                        <div class="col-md-7 bikecol">
-                            <h2 class="text-left">Easy Riding</h2>
+                    <div id="gateway5_11_14_p">
+                        <div class="col-md-7 bikecol" id="col1">
+                            <h2 class="text-left">Ehhhh</h2>
                             <p class="review">
                                 First off, keep in mind you have buy a $25 dollar yearly pass in order to ride. The riding itself was alright. 
                                 Decently smooth, but just flat. It had some dips and turns, but overall it was just uneventful for me. I am used 
@@ -92,98 +96,93 @@ body {
                             </p>
                             <div id="gateway5_11_14_p" class="thumbnails row" style="position: absolute; bottom: 0;">
                                 <div class="col-xs-3 nopadding">
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.21.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.21_s.jpg" alt="" />
+                                    <a class="fancybox-thumbs" data-fancybox-group="thumb1" href="img/mbike/burke_5_31_14/IONX0014.jpg">
+                                        <img src="img/mbike/burke_5_31_14/IONX0014_s.jpg" alt="" />
+                                        <span class="text-content"><span>Click for more</span></span>
                                     </a>
                                 </div>
                                 <div class="col-xs-3 nopadding">
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.31.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.31_s.jpg" alt="" />
+                                    <a class="fancybox-thumbs" data-fancybox-group="thumb1" href="img/mbike/burke_5_31_14/IONX0013.jpg">
+                                        <img src="img/mbike/burke_5_31_14/IONX0013_s.jpg" alt="" />
+                                        <span class="text-content"><span>Click for more</span></span>
                                     </a>
                                 </div>
                                 <div class="col-xs-3 nopadding">
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.34.00.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_12.34.00_s.jpg" alt="" />
+                                    <a class="fancybox-thumbs" data-fancybox-group="thumb1" href="img/mbike/burke_5_31_14/IONX0003.jpg">
+                                        <img src="img/mbike/burke_5_31_14/IONX0003_s.jpg" alt="" />
+                                        <span class="text-content"><span>Click for more</span></span>
                                     </a>
                                 </div>
                                 <div class="col-xs-3 nopadding">
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.34.07.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_12.34.07_s.jpg" alt="" />
+                                    <a class="fancybox-thumbs" data-fancybox-group="thumb1" href="img/mbike/burke_5_31_14/IONX0001.jpg">
+                                        <img src="img/mbike/burke_5_31_14/IONX0001_s.jpg" alt="" />
+                                        <span class="text-content"><span>Click for more</span></span>
                                     </a>
                                 </div>
                                 <div class="hidden">
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.25.28.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_13.25.28_s.jpg" alt="" />
+                                    <a class="fancybox-thumbs" data-fancybox-group="thumb1" href="img/mbike/burke_5_31_14/2014-05-31_11.40.13.jpg">
                                     </a>
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.38.37.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_13.38.37_s.jpg" alt="" />
+                                    <a class="fancybox-thumbs" data-fancybox-group="thumb1" href="img/mbike/burke_5_31_14/2014-05-31_11.40.05.jpg">
                                     </a>
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.53.52.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_13.53.52_s.jpg" alt="" />
+                                    <a class="fancybox-thumbs" data-fancybox-group="thumb1" href="img/mbike/burke_5_31_14/2014-05-31_11.40.03.jpg">
                                     </a>
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.54.08.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_13.54.08_s.jpg" alt="" />
+                                    <a class="fancybox-thumbs" data-fancybox-group="thumb1" href="img/mbike/burke_5_31_14/2014-05-31_11.34.10.jpg">
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5 nopadding bikecol">
+                        <div class="col-md-5 nopadding bikecol" id="col2">
                             <div class="row nopadding">
                                 <div class="rating">
                                     <div class="row nopadding">
-                                        <div class="col-lg-6">
-                                            <h4 class="text-left">My Rating:</h4>
+                                        <div class="col-lg-6 col-md-6 col-xs-6">
+                                            <h4 class="text-left">Rating:</h4>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6 col-md-6 col-xs-6">
                                             <h4 class="text-right">&#9733;&#9733;&#9734;&#9734;&#9734;</h4>
                                         </div>
                                     </div>
                                     <div class="row nopadding">
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6 col-md-6 col-xs-6">
                                             <h4 class="text-left">Difficulty:</h4>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6 col-md-6 col-xs-6">
                                             <h4 class="text-right">Beginner</h4>
                                         </div>
                                     </div>
                                     <div class="row nopadding">
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6 col-md-6 col-xs-6">
                                             <h4 class="text-left">Distance:</h4>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6 col-md-6 col-xs-6">
                                             <h4 class="text-right">3.31 MI</h4>
                                         </div>
                                     </div>
                                     <div class="row nopadding">
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6 col-md-6 col-xs-6">
                                             <h4 class="text-left">Elevation:</h4>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6 col-md-6 col-xs-6">
                                             <h4 class="text-right">453 FT</h4>
                                         </div>
                                     </div>
                                     <div class="row nopadding">
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6 col-md-6 col-xs-6">
                                             <h4 class="text-left">Traffic:</h4>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6 col-md-6 col-xs-6">
                                             <h4 class="text-right">Minimal</h4>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row nopadding" style="position: absolute; bottom: 0;">
+                                <div class="row nopadding" style="">
                                     <div class="col-md-12 col-centered">
-                                        <!-- <h3 class="text-left">Map</h3> -->
-                                        <div class="map">
+                                        <div class="map hidden-sm hidden-xs">
                                             <img src="img/mbike/burke_map.png">
                                             <img class="elevation_img" src="img/mbike/burke_el.png">
                                         </div>
                                     </div>
                                 </div>
-
-                                <!--                                 <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.21.jpg">
-                                    <img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.21_s.jpg" alt="" />
-                                </a> -->
                             </div>
                         </div>
 
@@ -192,138 +191,30 @@ body {
             </div>
             <!-- End of First bike post -->
 
-            <!-- ---------------------------- Begining of a Bike Post -------------------------------------- -->
-            <div class="container-fluid bikepost">
-                <div class="row head">
-                    <div class="row titles">
-                        <div class="col-md-6">
-                            <h1>Gateway Trail</h1>
-                        </div>
-                        <div class="col-md-6" style="position: absolute; bottom: 0; right: 0;">
-                            <h3 class="text-right">May 12, 2014</h3>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-                <div class="row nopadding">
-                    <div id="gateway5_11_14_p" class="thumbnails">
-                        <div class="col-md-7 bikecol">
-                            <h2 class="text-left">Going Up</h2>
-                            <p class="review">
-                                The trail starts out awesome with a gazeebo and bench onlooking the mountain. Gateway is nearly impossible to ride up. Only very experienced and in-shape riders can go up without stopping. I rode about 50% of the time up.
-                            </p>
-                            <h2 class="text-left">Going Down</h2>
-                            <p class="review">
-                                Going down is much better. A steep drop, but not too smooth so you won't be able to gain much speed. Guys race down it. My time was about 8 minutes, but I know a guy that gets down in 5.
-                            </p>
-                            <div id="gateway5_11_14_p" class="thumbnails row" style="position: absolute; bottom: 0;">
-                                <div class="col-xs-3 nopadding">
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.21.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.21_s.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="col-xs-3 nopadding">
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.31.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.31_s.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="col-xs-3 nopadding">
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.34.00.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_12.34.00_s.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="col-xs-3 nopadding">
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.34.07.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_12.34.07_s.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="hidden">
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.25.28.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_13.25.28_s.jpg" alt="" />
-                                    </a>
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.38.37.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_13.38.37_s.jpg" alt="" />
-                                    </a>
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.53.52.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_13.53.52_s.jpg" alt="" />
-                                    </a>
-                                    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_13.54.08.jpg">
-                                        <img src="img/mbike/gateway_5_11_14/2014-05-11_13.54.08_s.jpg" alt="" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 nopadding bikecol">
-                            <div class="row nopadding">
-                                <div class="rating">
-                                    <div class="row nopadding">
-                                        <div class="col-lg-6">
-                                            <h4 class="text-left">My Rating:</h4>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4 class="text-right">&#9733;&#9733;&#9733;&#9733;&#9734;</h4>
-                                        </div>
-                                    </div>
-                                    <div class="row nopadding">
-                                        <div class="col-lg-6">
-                                            <h4 class="text-left">Difficulty:</h4>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4 class="text-right">Advanced</h4>
-                                        </div>
-                                    </div>
-                                    <div class="row nopadding">
-                                        <div class="col-lg-6">
-                                            <h4 class="text-left">Distance:</h4>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4 class="text-right">7.31 MI</h4>
-                                        </div>
-                                    </div>
-                                    <div class="row nopadding">
-                                        <div class="col-lg-6">
-                                            <h4 class="text-left">Elevation:</h4>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4 class="text-right">1234 FT</h4>
-                                        </div>
-                                    </div>
-                                    <div class="row nopadding">
-                                        <div class="col-lg-6">
-                                            <h4 class="text-left">Traffic:</h4>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4 class="text-right">Minimal</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row nopadding" style="position: absolute; bottom: 0;">
-                                    <div class="col-md-12 col-centered">
-                                        <!-- <h3 class="text-left">Map</h3> -->
-                                        <div class="map">
-                                            <img src="img/mbike/gateway_map.png">
-                                            <img class="elevation_img" src="img/mbike/gateway_el.png">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--                                 <a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/mbike/gateway_5_11_14/2014-05-11_12.32.21.jpg">
-                                    <img src="img/mbike/gateway_5_11_14/2014-05-11_12.32.21_s.jpg" alt="" />
-                                </a> -->
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- End of First bike post -->
         </div>
     </div>
 </div>
 
 <script type="text/javascript">
-$(document).ready(function() {
 
+function equalizeHeight() {
+    $(".bikepost").each(function( index ) {
+        var maxHeight = 0;
+        $(this).find(".bikecol").each( function ( index ) {
+            if ( $(this).height() > maxHeight )
+                maxHeight = $(this).height();
+        });
+        $(this).find(".bikecol").height(maxHeight);
+    });
+}
+
+$(document).ready(function() {
+    // $("#col1").height($("#col2").height());
+    equalizeHeight();
+    $( window ).resize(function() {
+        equalizeHeight();
+        // $("#col1").height($("#col2").height());
+    });
     var map;
 
     function initialize() {
