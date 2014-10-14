@@ -7,7 +7,7 @@
 
 		<div id="container_left" class="col-sm-3 hidden-xs">
 			<?php
-			echo HTML::image('img/my_pic_crop.png', 'Grant Spence');
+			echo HTML::image('img/mountain_pic.jpg', 'Grant Spence');
 			?>
 			<div id="links">
 				<h1 class="code">+</h1>
