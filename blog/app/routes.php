@@ -25,4 +25,6 @@ Route::get('/', 'BaseController@home');
 Route::get('/mountbike', 'BaseController@mountbike');
 Route::get('/development', 'BaseController@development');
 Route::get('/resume', 'BaseController@resume');
+Route::get('/test', 'BaseController@test');
+Route::get('/ajax/mbike_pics', 'BaseController@ajaxMbikePics');
 

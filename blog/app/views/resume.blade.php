@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="clearer"></div>
-<div id="content">
+<div class="">
         <div class="col-md-9 col-centered full" id="sub-content">
 
 		<div id="container_left" class="col-sm-3 hidden-xs">
@@ -23,7 +23,7 @@
 			</div>
 			
 		</div>
-		<div id="container_right" class="col-sm-9">
+		<div id="container_right" class="col-sm-9 white-block">
 			<div class="h_left">
 				<!-- <h1 class="code">[</h1> -->
 				<h2>ABOUT ME</h2>
@@ -49,7 +49,7 @@
 				<h5 style="display:inline"><strong>Virginia Tech - Bachelor of Science, Computer Engineering (CPE)</strong></h5>
 				<div class="bullet">
 					<h3 class="code">-</h3>
-					<h5 style="display:inline">Current GPA: 3.80 / 4.0</h5>
+					<h5 style="display:inline">Current GPA: 3.83 / 4.0</h5>
 				</div>
 
 				<div class="bullet">
@@ -173,6 +173,14 @@
 			</div>
 
 			<div class="p_left">
+				<div class="row plus plusgap">
+					<!-- <h3 class="code">+</h3> -->
+					<h5 style="display:inline">Systems Engineer, GCSS (U.S. Marines), Stafford VA July 2014 – August 2014</h5>
+				</div>
+				<div class="row plus plusgap">
+					<!-- <h3 class="code">+</h3> -->
+					<h5 style="display:inline">Software Engineer, SIAT (U.S. Marines), Fredricksburg VA May 2014 – July 2014</h5>
+				</div>
 				<div class="row plus plusgap">
 					<!-- <h3 class="code">+</h3> -->
 					<h5 style="display:inline">Network Engineer, PD ALTESS (U.S. Army), Radford VA May 2012 – March 2014</h5>

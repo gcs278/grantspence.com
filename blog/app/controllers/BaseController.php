@@ -34,59 +34,33 @@ class BaseController extends Controller {
 	}
 
 	public function home() {
-		return View::make('home');
+        $user_agent = strtolower ( $_SERVER['HTTP_USER_AGENT'] );
+
+        $mobile = false;
+		if ( preg_match ( "/phone|iphone|itouch|ipod|symbian|android|htc_|htc-|palmos|blackberry|opera mini|iemobile|windows ce|nokia|fennec|hiptop|kindle|mot |mot-|webos\/|samsung|sonyericsson|^sie-|nintendo/", $user_agent ) ) {
+                // these are the most common
+                $mobile = true;
+        } else if ( preg_match ( "/mobile|pda;|avantgo|eudoraweb|minimo|netfront|brew|teleca|lg;|lge |wap;| wap /", $user_agent ) ) {
+                // these are less common, and might not be worth checking
+                $mobile = true;
+        }
+		return View::make('home')->withMobile($mobile);
 	}
 
 	public function mountBike() {
-		$burkeFarm = new bikeStruct();
+		$allpics = File::allFiles('img/mbike');
 
-		$burkeFarm->id = "burkefarm_5_31_14";
-		$burkeFarm->title = "Burke Farm";
-		$burkeFarm->date = "May 31st, 2014";
-		$burkeFarm->review = "First off, keep in mind you have buy a $25 dollar yearly pass in order to ride. The riding itself was alright. 
-		                    Decently smooth, but just flat. It had some dips and turns, but overall it was just uneventful for me. I am used 
-		                    to riding up a mountain then down that mountain.
-		                    </p>
-		                    <p>
-		                                Probably will not ride again. If you are looking for a good, easy, and safe place to ride, come on out.";
-		$burkeFarm->reviewTitle = "Ehhhh";
-		$burkeFarm->rating = 2;
-		$burkeFarm->difficulty = "Beginner";
-		$burkeFarm->distance = "3.31";
-		$burkeFarm->elevation = "453";
-		$burkeFarm->traffic = "Minimal";
-		$burkeFarm->mapLoc = "mbike/burke_map.png";
-		$burkeFarm->eleLoc = "mbike/burke_el.png";
-		$burkeFarm->picFolder = "mbike/burke_5_31_14";
-		$burkeFarm->picArray = array("IONX0014","IONX0013","IONX0003","IONX0001","2014-05-31_11.40.13",
-		    "2014-05-31_11.40.05","2014-05-31_11.40.03","2014-05-31_11.34.10");
+		$pics = array();
+		foreach($allpics as $pic) {
+			if ( preg_match("@((?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*)_s\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?@",$pic, $result) ) {
+				$large = explode("_s",$pic)[0] . explode("_s",$pic)[1];
+				array_push($pics, array('thumb' => $pic, 'large' => $large));
+				// var_dump($large);
+			}
+		}
+		// var_dump($pics);
 
-		$bikePosts = $this->bikePost($burkeFarm);
-
-		$gateway = new bikeStruct();
-
-		$gateway->id = "gateway_5_31_14";
-		$gateway->title = "Gateway Trail";
-		$gateway->date = "May 12th, 2014";
-		$gateway->review = "The trail starts out awesome with a gazeebo and bench onlooking the mountain. Gateway is nearly impossible to ride up. Only very experienced and in-shape riders can go up without stopping. I rode about 50% of the time up.
-		                    </p>
-		                    <p>
-		                                Going down is much better. A steep drop, but not too smooth so you won't be able to gain much speed. Guys race down it. My time was about 8 minutes, but I know a guy that gets down in 5.";
-		$gateway->reviewTitle = "A Great Experience";
-		$gateway->rating = 4;
-		$gateway->difficulty = "Advanced";
-		$gateway->distance = "7.31";
-		$gateway->elevation = "1234";
-		$gateway->traffic = "Minimal";
-		$gateway->mapLoc = "mbike/gateway_map.png";
-		$gateway->eleLoc = "mbike/gateway_el.png";
-		$gateway->picFolder = "mbike/gateway_5_11_14";
-		$gateway->picArray = array("2014-05-11_12.32.21","2014-05-11_12.32.31","2014-05-11_12.34.00","2014-05-11_12.34.07","2014-05-11_13.25.28",
-		    "2014-05-11_13.38.37","2014-05-11_13.53.52","2014-05-11_13.54.08");
-
-		$bikePosts .= $this->bikePost($gateway);
-
-		return View::make('mountBike')->with('bikePosts',$bikePosts);
+		return View::make('mountBike')->withPics(array_slice($pics,0,12));
 	}
 
 	public function resume() {
@@ -95,6 +69,10 @@ class BaseController extends Controller {
 
 	public function development() {
 		return View::make('development');
+	}
+
+	public function test() {
+		return View::make('test');
 	}
 
 	protected function bikePost($bikeStruct) {
@@ -214,5 +192,26 @@ EOD;
 EOD;
     return $str;
 }
+
+	public function ajaxMbikePics() {
+		$allpics = File::allFiles('img/mbike');
+
+		$pics = array();
+		foreach($allpics as $pic) {
+			if ( preg_match("@((?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*)_s\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?@",$pic, $result) ) {
+				$large = explode("_s",$pic)[0] . explode("_s",$pic)[1];
+				array_push($pics, array('thumb' => $result[0], 'large' => $large));
+				// var_dump($large);
+			}
+		}
+
+		$left = true;
+		if ( ( Input::get('page')*12 + 12 ) >= count($pics) ) {
+			$left = false;
+		}
+
+		return Response::json(array('results' => array_slice($pics, Input::get('page')*12,12), 'left' => $left));
+	}
+
 
 }
