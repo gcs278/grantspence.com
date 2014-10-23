@@ -60,7 +60,7 @@ class BaseController extends Controller {
 		}
 		// var_dump($pics);
 
-		return View::make('mountBike')->withPics(array_slice($pics,0,12));
+		return View::make('mountbike')->withPics(array_slice($pics,0,12));
 	}
 
 	public function resume() {

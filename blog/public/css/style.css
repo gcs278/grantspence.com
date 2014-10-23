@@ -577,6 +577,9 @@ html, body {
     #main.home #lower_nav a {
         color: black;
     }
+    #main.resume .icon-bar {
+        background-color: white;
+    }
 }
 #main.resume footer {
     background-color: rgba(0,0,0,0.85);
