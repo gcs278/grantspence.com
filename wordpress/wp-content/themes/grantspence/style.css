@@ -58,7 +58,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * Resetting and rebuilding styles have been helped along thanks to the fine
  * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
  */
-
  * {
  	font-family: comfortaa;
  }
@@ -68,6 +67,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  }
 
  body {
+ 	/*background-color: #9B9B9B;*/
  	padding-top: 70px;
  }
 

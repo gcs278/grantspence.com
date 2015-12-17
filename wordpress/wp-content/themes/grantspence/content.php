@@ -12,6 +12,7 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+
 	<div class="row itsme">
 			<div class="center-block text-center">
 				<img class="img-center" src="<?php echo wp_get_attachment_image_src( 18, 'large' )[0]; ?>"> 
