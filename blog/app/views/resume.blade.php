@@ -49,7 +49,7 @@
 				<h5 style="display:inline"><strong>Virginia Tech - Bachelor of Science, Computer Engineering (CPE)</strong></h5>
 				<div class="bullet">
 					<h3 class="code">-</h3>
-					<h5 style="display:inline">Current GPA: 3.83 / 4.0</h5>
+					<h5 style="display:inline">Current GPA: 3.77 / 4.0</h5>
 				</div>
 
 				<div class="bullet">
@@ -59,7 +59,7 @@
 
 				<div class="bullet">
 					<h3 class="code">-</h3>
-					<h5 style="display:inline">Member of Univeristy Honors: Fall 2012 - Present</h5>
+					<h5 style="display:inline">Member of Univeristy Honors: Fall 2012 - Spring 2015</h5>
 				</div>
 			</div>
 
@@ -192,26 +192,6 @@
 			</div>
 
 			<div class="h_left">
-				<!-- <h1 class="code">[</h1> -->
-				<h2>Certifications</h2>
-				<hr>
-				<!-- <h1 class="code">]</h1> -->
-			</div>
-
-			<div class="p_left">
-				<div class="row plus plusgap">
-					<!-- <h3 class="code">+</h3> -->
-					<h5 style="display:inline">CompTIA’s Network+ August 2012</h5>
-				</div>
-				<div class="row plus">
-					<!-- <h3 class="code">+</h3> -->
-					<h5 style="display:inline">CompTIA’s Security+ July 2012</h5>
-				</div>
-			</div>
-
-
-
-				<div class="row space"></div>
 			</div>
 
 		</div>

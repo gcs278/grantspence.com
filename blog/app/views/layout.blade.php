@@ -118,7 +118,7 @@
 					<a href="/">Grant Spence</a>
 				</div> -->
                 <div id="copyright">
-                    Developed and Designed by Grant Spence &copy; 2014
+                    Developed and Designed by Grant Spence &copy; 2015
                 </div>
             </div>
         </footer>
