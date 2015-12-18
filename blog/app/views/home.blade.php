@@ -37,40 +37,42 @@ body {
 </style>
 	@if (!$mobile)
 		<video autoplay muted loop id="bgvid">
-			<source src="/img/Mbike_s.mp4" type="video/mp4">
+			<source src="/img/mounts.mp4" type="video/mp4">
 		</video>
 	@endif
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="md-col-12">
 				<div class="tall">
 					<div class="desc hidden-xs">
-						<p>pandapas pond<br>8/21/14</p>
+						<!-- <p>ROCKY MOUNTAINS<br>6/13/15</p> -->
 					</div>
-					<div class="desc-middle hidden-sm hidden-md hidden-lg">
-						<p>Welcome<br><img src="/img/arrow-down-white.png" class="down-arrow clickable" id="down-arrow"></p>
+
+					<div class="desc-middle clickable">
+						<p>Welcome</p>
+							<img src="/img/black-arrow.png" class="down-arrow" id="down-arrow">
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container-fluid">
 		<div class="row">
-				<div class="white-block">
+				<div class="white-block" data-0="right:-100%; top: 50px" data-150="right:-50%;">
 	                <a href="#content" name="content"></a>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6 col-sm-6 col-xs-12 about-me">
-								<h1>About Me</h1>
-								<p>I am a motivated and dedicated student that has developed a great passion for my major. My objective in life is to never stop learning about technology and eventually contribute to developing new technologies. On the job and in college I have fun learning about how things work. It fills me with a sense of excitement and passion.</p>
-								<h1>Where am I?</h1>
-								<p>This is GrantSpence.com - an experimental website developed and designed by yours truly, Grant Spence. I am a Computer Engineering student at Virginia Tech and this website is a developmental ground for myself to push ideas and display them for the world to see.</p>
-							</div>
-							<div class="col-md-5 col-sm-6 col-xs-12 col-sm-offset-0 col-md-offset-1">
-								<div class="right-pic">
-									<?php echo HTML::image('img/mountain_pic.jpg', 'Grant Spence');?>
+					<div class="row">
+						<div class="col-md-12 about-me">
+							<div class='row'>
+								<div class="col-md-6">
+									<h1>About Me</h1>
+								</div>
+								<div class="col-md-6">
+									<?php echo HTML::image('img/grant.jpg', 'Grant Spence');?>
 								</div>
 							</div>
+							<p>I am a motivated and dedicated student that has developed a great passion for my major. My objective in life is to never stop learning about technology and eventually contribute to developing new technologies. On the job and in college I have fun learning about how things work. It fills me with a sense of excitement and passion.</p>
 						</div>
-						<div class="row links">
+<!-- 						<div class="row links">
 							<div class="col-md-10 col-centered">
 								<div class="col-md-4">
 									<a href="/mountbike">
@@ -91,6 +93,14 @@ body {
 									</a>
 								</div>
 							</div>
+						</div> -->
+					</div>
+				</div>
+				<div class="white-block" data-150="left:-100%; top: 50%" data-350="left:0%;">
+					<div class="row">
+						<div class="col-md-12 about-me">
+							<h1>Where am I?</h1>
+							<p>This is GrantSpence.com - an experimental website developed and designed by yours truly, Grant Spence. I am a Computer Engineering student at Virginia Tech and this website is a developmental ground for myself to push ideas and display them for the world to see.</p>
 						</div>
 					</div>
 				</div>

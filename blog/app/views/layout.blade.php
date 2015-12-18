@@ -34,6 +34,8 @@
     <!--<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+
     <style type="text/css">
     .fancybox-custom .fancybox-skin {
         box-shadow: 0 0 50px #222;
@@ -68,11 +70,11 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul id="nav_list_wrap" class="nav navbar-nav">
                     <li class="nav_link">
-                        <a href="/" class="
+                        <a href="/" class="">Home</a>
                         <?php
                             if ( Request::is('/') )
-                                echo 'active'
-                        ?>">Home</a>
+                                echo '<hr class="underline">'
+                        ?>
                     </li>
 
                     <li class="nav_link">
@@ -96,7 +98,7 @@
                         <?php
                             if ( Request::is('mountbike') )
                                 echo 'active'
-                        ?>">Mountain Biking</a>
+                        ?>">Blog</a>
                     </li>
 
                 </ul>
@@ -133,6 +135,7 @@ $(document).ready(function() {
     // hide #back-top first
     $("#back-top").hide();
     
+    var s = skrollr.init();
     // // fade in #back-top
     // $(function () {
     //     $(window).scroll(function () {
@@ -151,8 +154,40 @@ $(document).ready(function() {
     //         return false;
     //     });
     // });
+    $( window ).scroll(function() {
+        console.log($(window).scrollTop());
+        // $('.white-block').css({'opacity':( $(window).scrollTop()/100)});
+    });
+
+    var message = 1;
+    setInterval(function(){
+        if ( message == 1 ) {
+          $('.desc-middle p').fadeOut(500, function() {
+            $('.desc-middle p').text('Glad you\'re here');
+            $('.desc-middle p').fadeIn(500, function() {
+                message = 2;
+            });
+          });
+        }
+        else if ( message == 2 ) {
+            $('.desc-middle p').fadeOut(500, function() {
+            $('.desc-middle p').text('Stay awhile');
+            $('.desc-middle p').fadeIn(500, function() {
+                message = 3;
+            });
+          });
+        }
+        else if ( message == 3 ) {
+            $('.desc-middle p').fadeOut(500, function() {
+            $('.desc-middle p').text('Welcome');
+            $('.desc-middle p').fadeIn(500, function() {
+                message = 1;
+            });
+          });
+        }
+    }, 4000);
     
-    $('#down-arrow').click( function() {
+    $('.desc-middle').click( function() {
         var aTag = $("a[name='"+ "content" +"']");
         $('html,body').animate({scrollTop: aTag.offset().top},'slow');
     });

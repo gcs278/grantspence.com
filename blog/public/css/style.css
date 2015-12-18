@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: SSP_Light;
-    src: url(Source_Sans_Pro/SourceSansPro-Light.ttf);
+    src: url(NordMedium.ttf);
 }
 @font-face {
     font-family: SSP_Regular;
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5 {
     display: none;
 }
 .navbar-header {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 300!important;
     text-transform: uppercase;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5 {
     max-width: 150px;
 }
 #lower_nav {
-    position: relative;
+    position: fixed;
     width: 100%;
     /*height: 50px;*/
     background-color: rgba(0,0,0,0);
@@ -137,6 +137,13 @@ h1, h2, h3, h4, h5 {
 }
 .active {
     color: #980000 !important;
+    font-weight: bold;
+}
+hr.underline {
+    margin-top: -13px;
+    margin-left: 13px;
+    margin-right: 13px;
+    border-color: black;
 }
 .unjust {
     text-align: left !important;
@@ -159,7 +166,7 @@ li {
     vertical-align: middle;
     padding-left: 25px;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 a {
@@ -560,7 +567,7 @@ html, body {
     background-size: cover;
 }
 #main.resume {
-    background: url('/img/bay.jpg') no-repeat center center fixed;
+    /*background: url('/img/bay.jpg') no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -604,14 +611,24 @@ html, body {
     width: auto;
     height: auto;
     z-index: -100;
-    background: url(/img/bay.jpg) no-repeat;
+    /*background: url(/img/bay.jpg) no-repeat;*/
     background-size: cover;
 }
 
 .white-block {
-    background-color: rgba(0,0,0,0.85);
-    min-height: 100vh;
-    padding-bottom: 100px;
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top:0px;
+    /*min-height: 100vh;*/
+    /*padding-bottom: 100px;*/
+/*    -moz-transform: skew(-15deg,0deg);
+    -ms-transform: skew(-15deg,0deg);
+    -o-transform: skew(-15deg,0deg);
+    transform: skew(-15deg,0deg);*/
+}
+.white-block p {
+    width: 400px;
+    margin-left: 10px;
 }
 .white-block h1, .white-block h2, .white-block h3, .white-block div {
     color: white;
@@ -623,19 +640,23 @@ html, body {
 .tall {
     position: relative;
     text-align: center;
-    height: 100vh;
+    height: 95vh;
+    margin-top: 50px;
 }
 .tall p {
     position: relative;
-    color: white;
-    font-size: 30px;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+.tall p:hover {
+    text-decoration: none;
 }
 .top {
     background-color: black;
     height:100px;
 }
 #lower_nav a {
-    color: white;
+    color: black;
 }
 #lower_nav li.nav_link:hover {
     background-color: transparent !important;
@@ -669,6 +690,10 @@ html, body {
 .about-me p {
     margin-bottom: 30px;
 }
+.about-me img {
+    border: solid 2px white;
+    height: 50px;
+}
 .white-block .container {
     height: 100%;
 }
@@ -700,7 +725,8 @@ html, body {
 }
 .desc {
     position: absolute;
-    left: 200px;
+    color: black;
+    left: 10%;
     top: 34%;
 }
 
@@ -716,15 +742,16 @@ html, body {
 .desc-middle {
     position: absolute;
     left: 50%;
-    margin-top: -50px;
+    margin-top: -75px;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     top: 50%;
 }
 .down-arrow {
-    height: 12px;
+    height: 18px;
     width: auto;
     margin-left: 5px;
+    margin-top: -0px;
     margin-bottom: 2px;
 }
 .down-arrow-lg {
@@ -741,7 +768,6 @@ div, a, h1, h2, h3, h4, h5, p, h6, li {
     display: inline-block;
 }
 .clickable:hover {
-    text-decoration: underline;
     cursor: pointer;
 }
 .mbike-section h1 {
