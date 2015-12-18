@@ -1,8 +1,5 @@
 @extends('layout')
 @section('content')
-<!-- Add mousewheel plugin (this is optional) -->
-<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
-
 <!-- Add fancyBox main JS and CSS files -->
 <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
 <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
@@ -50,7 +47,7 @@ body {
 
 					<div class="desc-middle clickable">
 						<p>Welcome</p>
-							<img src="/img/black-arrow.png" class="down-arrow" id="down-arrow">
+						<img src="/img/black-arrow.png" class="down-arrow" id="down-arrow">
 					</div>
 				</div>
 			</div>
@@ -58,20 +55,16 @@ body {
 	</div>
 	<div class="container-fluid">
 		<div class="row">
-				<div class="white-block" data-0="right:-100%; top: 50px" data-150="right:-50%;">
+				<div class="white-block" data-0="right:-100%; top: 50px" data-200="right:0%;">
 	                <a href="#content" name="content"></a>
 					<div class="row">
 						<div class="col-md-12 about-me">
-							<div class='row'>
-								<div class="col-md-6">
-									<h1>About Me</h1>
-								</div>
-								<div class="col-md-6">
-									<?php echo HTML::image('img/grant.jpg', 'Grant Spence');?>
-								</div>
-							</div>
-							<p>I am a motivated and dedicated student that has developed a great passion for my major. My objective in life is to never stop learning about technology and eventually contribute to developing new technologies. On the job and in college I have fun learning about how things work. It fills me with a sense of excitement and passion.</p>
+							<h1>Where am I?</h1>
+							<p>This is GrantSpence.com - an experimental website developed and designed by yours truly, 
+								Grant Spence. I am a <strong>web developer</strong>, <strong>engineer</strong>, and <strong>aspiring designer</strong>. This website is a 
+								developmental ground for myself to push ideas and display them for the world to see.</p>
 						</div>
+						
 <!-- 						<div class="row links">
 							<div class="col-md-10 col-centered">
 								<div class="col-md-4">
@@ -99,10 +92,22 @@ body {
 				<div class="white-block" data-150="left:-100%; top: 50%" data-350="left:0%;">
 					<div class="row">
 						<div class="col-md-12 about-me">
-							<h1>Where am I?</h1>
-							<p>This is GrantSpence.com - an experimental website developed and designed by yours truly, Grant Spence. I am a Computer Engineering student at Virginia Tech and this website is a developmental ground for myself to push ideas and display them for the world to see.</p>
+							<h1>About Me</h1>
+							<?php //echo HTML::image('img/grant2.jpg', 'Grant Spence');?>
+							<p>I am a motivated and dedicated student that has developed a great passion 
+								for my major. My objective in life is to never stop learning about 
+								technology and eventually contribute to developing new technologies. 
+								On the job and in college I have fun learning about how things work. It 
+								fills me with a sense of excitement and passion.</p>
 						</div>
 					</div>
+				</div>
+				<a class="letstalk clickable" href="/resume" data-350="top:100%" data-450="top:35%">
+					<p>Want to talk business?</p>
+					<p>Explore my resume</p>
+				</a>
+				<div class="attention" data-450="top:100%" data-500="top:5%">
+					<?php echo HTML::image('img/chalk_arrow.png', 'Grant Spence');?>
 				</div>
 			</div>
 		</div>

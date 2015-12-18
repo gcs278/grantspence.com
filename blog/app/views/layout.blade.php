@@ -78,11 +78,11 @@
                     </li>
 
                     <li class="nav_link">
-                        <a href="/resume" class="
+                        <a href="/resume">Resume</a>
                         <?php
                             if ( Request::is('resume') )
-                                echo 'active'
-                        ?>">Resume</a>
+                                echo '<hr class="underline">'
+                        ?>
                     </li>
 
                     <li class="nav_link">
@@ -154,11 +154,6 @@ $(document).ready(function() {
     //         return false;
     //     });
     // });
-    $( window ).scroll(function() {
-        console.log($(window).scrollTop());
-        // $('.white-block').css({'opacity':( $(window).scrollTop()/100)});
-    });
-
     var message = 1;
     setInterval(function(){
         if ( message == 1 ) {
@@ -189,7 +184,7 @@ $(document).ready(function() {
     
     $('.desc-middle').click( function() {
         var aTag = $("a[name='"+ "content" +"']");
-        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+        $('html,body').animate({scrollTop: $('#main-wrapper').height()},'slow');
     });
 
     // var topLower = $('#lower_nav').offset().top;
