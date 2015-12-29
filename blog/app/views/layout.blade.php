@@ -34,6 +34,9 @@
     <!--<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+     <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
+    <script src="bower_components/chartist/dist/chartist.min.js"></script>
+
     <script type="text/javascript" src="js/skrollr.min.js"></script>
 
     <style type="text/css">
@@ -48,7 +51,7 @@
 @if( Request::is('/') )
 <body id="main" class="home">
 @elseif ( Request::is('resume') )
-<body id="main" class="resume">
+<body id="main" class="resume" data-0="background-color: rgb(255,255,255);" data-100="background-color: rgb(255,255,255);">
 @elseif ( Request::is('development') )
 <body id="main" class="dev">
 @elseif ( Request::is('mountbike') )
@@ -182,7 +185,7 @@ $(document).ready(function() {
         }
     }, 4000);
     
-    $('.desc-middle').click( function() {
+    $('.main .desc-middle').click( function() {
         var aTag = $("a[name='"+ "content" +"']");
         $('html,body').animate({scrollTop: $('#main-wrapper').height()},'slow');
     });

@@ -59,7 +59,7 @@ body {
 	                <a href="#content" name="content"></a>
 					<div class="row">
 						<div class="col-md-12 about-me">
-							<h1>Where am I?</h1>
+							<h1>What is this?</h1>
 							<p>This is GrantSpence.com - an experimental website developed and designed by yours truly, 
 								Grant Spence. I am a <strong>web developer</strong>, <strong>engineer</strong>, and <strong>aspiring designer</strong>. This website is a 
 								developmental ground for myself to push ideas and display them for the world to see.</p>
