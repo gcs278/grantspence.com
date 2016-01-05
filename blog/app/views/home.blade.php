@@ -34,7 +34,7 @@ body {
 </style>
 	@if (!$mobile)
 		<video autoplay muted loop id="bgvid">
-			<source src="/img/mounts.mp4" type="video/mp4">
+			<!-- <source src="/img/mounts.mp4" type="video/mp4"> -->
 		</video>
 	@endif
 	<div class="container">
@@ -46,8 +46,10 @@ body {
 					</div>
 
 					<div class="desc-middle clickable">
-						<p>Welcome</p>
-						<img src="/img/black-arrow.png" class="down-arrow" id="down-arrow">
+						<!-- <img class="circle" src="/img/grant3.jpeg" > -->
+						<p>WEB DEVELOPER</p>
+						<p class="fancy strikethrough">Aspiring Designer</p>
+						<!-- <img src="/img/black-arrow.png" class="down-arrow" id="down-arrow"> -->
 					</div>
 				</div>
 			</div>

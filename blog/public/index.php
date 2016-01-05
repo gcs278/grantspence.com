@@ -6,6 +6,10 @@
  * @author   Taylor Otwell <taylorotwell@gmail.com>
  */
 
+
+define('WP_USE_THEMES', false);
+require __DIR__.'/../wordpress/wp-blog-header.php';
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader

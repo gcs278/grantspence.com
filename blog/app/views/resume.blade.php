@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-<a href="http://www.linkedin.com/pub/grant-spence/63/7a5/157/" target="_blank">LinkedIn</a>
 <div class="container">
 	<div class="row front-container">
 			<div class="desc-middle" data-0="left: 50%; top: 70%;">
@@ -21,14 +20,14 @@
 				<div class="sheet">
 					<div class="profile">
 						<img class="pic" src="/img/grant3.jpeg">
-						<!-- <div class="in">
+						<a href="http://www.linkedin.com/pub/grant-spence/63/7a5/157/" target="_blank" class="in">
 							<img src="/img/linkedin.png">
-							<p>LinkedIn</p>
-						</div>
+							<span>LinkedIn</span>
+						</a>
 						<div class="git">
 							<img src="/img/github.png">
-							<p>Github</p>
-						</div> -->
+							<span>Github</span>
+						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-6">
@@ -83,7 +82,6 @@
 										<div class="inside">
 											<h3>Associate of Science</h3>
 											<h4>Eastern Shore Community College, May 2011</h4>
-											<h5>July 2015 - Present</h5>
 										</div>
 									</div>
 								</div>
@@ -96,10 +94,68 @@
 						<div class="col-md-1">
 							<h3 class='sideways'>SKILLS</h3>
 						</div>
-						<div class="col-md-8">
-							<div class="row">
+						<div class="col-md-9">
 								<div class="skills">
-									<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-3">
+											<div class="left">
+												Languages
+											</div>
+											<div class="right">
+												<div>PHP</div>
+												<div>HTML/CSS</div>
+												<div>Java</div>
+												<div>Javascript</div>
+												<div>C/C++</div>
+												<div>Objective C</div>
+												<div>Ruby</div>
+												<div>Python</div>
+												<div>Swift</div>
+												<div>Python</div>
+												<div>SQL</div>
+												<div>Verilog/VHDL</div>
+												<!-- CSS, Java, Javascript, C, C++, Objective C, Ruby, Python, Swift, Verilog/VHDL, SQL -->
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="left">
+												Frameworks
+											</div>
+											<div class="right">
+												<div>Laravel</div>
+												<div>Node.JS</div>
+												<div>Wordpress</div>
+												<div>Express.JS</div>
+												<div>Hadoop</div>
+												<div>ColdFusion</div>
+												<div>IOS Dev</div>
+												<div>Android Dev</div>
+												<div>QT</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="left">
+												Plugins
+											</div>
+											<div class="right">
+												<div>Socket.IO</div>
+												<div>Facebook API</div>
+												<div>Bootstrap</div>
+											</div>
+										</div>
+
+										<div class="col-md-3">
+											<div class="left">
+												Databases
+											</div>
+											<div class="right">
+												<div>MySQL</div>
+												<div>MongoDB</div>
+												<div>PostgreSQL</div>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="col-md-12">
 										<div class="bar" style="width:100%">
 											PHP
 										</div>
@@ -124,8 +180,7 @@
 										<div class="bar" style="width:70%">
 											Swift
 										</div>
-									</div>
-								</div>
+									</div> -->
 							</div>
 						</div>
 					</div>
@@ -135,7 +190,7 @@
 						<div class="col-md-1">
 							<h3 class='sideways'>EMPLOYMENT</h3>
 						</div>
-						<div class="col-md-8">
+						<div class="col-md-10">
 							<div class="employment">
 								<div class="job">
 									<div class="row">
@@ -185,8 +240,41 @@
 						</div>
 					</div>
 
+
+					<div class="row relative resume-section awards">
+						<div class="vertical-line"></div>
+						<div class="col-md-1">
+							<h3 class='sideways'>AWARDS</h3>
+						</div>
+						<div class="col-md-9">
+								<div class="row">
+									<div class="col-md-3">
+										<span class="time">July 2013</span>
+									</div>
+									<div class="col-md-9">
+										<span class="award">National Department of Defense SMART Scholarship</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<span class="time">Fall 2011</span>
+									</div>
+									<div class="col-md-9">
+										<span class="award">Virginia Tech Lifeline Scholarship</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<span class="time">November 2010</span>
+									</div>
+									<div class="col-md-9">
+										<span class="award">Named Top Ten Community College Student by USA Today</span>
+									</div>
+								</div>
+						</div>
+					</div>
+
 				</div>
-				<img class="skill" src="/img/php.png">
 				<script>
 					$(document).ready(function() {
 						var data = {

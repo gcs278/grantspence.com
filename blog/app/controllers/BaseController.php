@@ -47,20 +47,10 @@ class BaseController extends Controller {
 		return View::make('home')->withMobile($mobile);
 	}
 
-	public function mountBike() {
-		$allpics = File::allFiles('img/mbike');
+	public function blog() {
+        $page = get_post(5);
 
-		$pics = array();
-		foreach($allpics as $pic) {
-			if ( preg_match("@((?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*)_s\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?@",$pic, $result) ) {
-				$large = explode("_s",$pic)[0] . explode("_s",$pic)[1];
-				array_push($pics, array('thumb' => $pic, 'large' => $large));
-				// var_dump($large);
-			}
-		}
-		// var_dump($pics);
-
-		return View::make('mountbike')->withPics(array_slice($pics,0,12));
+        return View::make('blog')->with('page', $page);
 	}
 
 	public function resume() {
@@ -68,7 +58,9 @@ class BaseController extends Controller {
 	}
 
 	public function development() {
-		return View::make('development');
+        $posts = get_posts(array('category'=>3));
+
+		return View::make('development')->with('posts',$posts);
 	}
 
 	public function test() {

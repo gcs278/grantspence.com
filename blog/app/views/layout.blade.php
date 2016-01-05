@@ -89,19 +89,19 @@
                     </li>
 
                     <li class="nav_link">
-                        <a href="/development" class="
-                        <?php
+                        <a href="/development">Development</a>
+                            <?php
                             if ( Request::is('development') )
-                                echo 'active'
-                        ?>">Development</a>
+                                echo '<hr class="underline">'
+                        ?>
                     </li>
 
                     <li class="nav_link">
-                        <a href="/mountbike" class="
+                        <a href="/blog" class="">Blog</a>
                         <?php
-                            if ( Request::is('mountbike') )
-                                echo 'active'
-                        ?>">Blog</a>
+                            if ( Request::is('blog') )
+                                echo '<hr class="underline">'
+                        ?>
                     </li>
 
                 </ul>
@@ -157,33 +157,33 @@ $(document).ready(function() {
     //         return false;
     //     });
     // });
-    var message = 1;
-    setInterval(function(){
-        if ( message == 1 ) {
-          $('.desc-middle p').fadeOut(500, function() {
-            $('.desc-middle p').text('Glad you\'re here');
-            $('.desc-middle p').fadeIn(500, function() {
-                message = 2;
-            });
-          });
-        }
-        else if ( message == 2 ) {
-            $('.desc-middle p').fadeOut(500, function() {
-            $('.desc-middle p').text('Stay awhile');
-            $('.desc-middle p').fadeIn(500, function() {
-                message = 3;
-            });
-          });
-        }
-        else if ( message == 3 ) {
-            $('.desc-middle p').fadeOut(500, function() {
-            $('.desc-middle p').text('Welcome');
-            $('.desc-middle p').fadeIn(500, function() {
-                message = 1;
-            });
-          });
-        }
-    }, 4000);
+    // var message = 1;
+    // setInterval(function(){
+    //     if ( message == 1 ) {
+    //       $('.desc-middle p').fadeOut(500, function() {
+    //         $('.desc-middle p').text('Glad you\'re here');
+    //         $('.desc-middle p').fadeIn(500, function() {
+    //             message = 2;
+    //         });
+    //       });
+    //     }
+    //     else if ( message == 2 ) {
+    //         $('.desc-middle p').fadeOut(500, function() {
+    //         $('.desc-middle p').text('Stay awhile');
+    //         $('.desc-middle p').fadeIn(500, function() {
+    //             message = 3;
+    //         });
+    //       });
+    //     }
+    //     else if ( message == 3 ) {
+    //         $('.desc-middle p').fadeOut(500, function() {
+    //         $('.desc-middle p').text('Welcome');
+    //         $('.desc-middle p').fadeIn(500, function() {
+    //             message = 1;
+    //         });
+    //       });
+    //     }
+    // }, 4000);
     
     $('.main .desc-middle').click( function() {
         var aTag = $("a[name='"+ "content" +"']");

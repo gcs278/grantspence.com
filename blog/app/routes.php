@@ -22,7 +22,7 @@ Route::get('/', function()
 });
 
 Route::get('/', 'BaseController@home');
-Route::get('/mountbike', 'BaseController@mountbike');
+Route::get('/blog', 'BaseController@blog');
 Route::get('/development', 'BaseController@development');
 Route::get('/resume', 'BaseController@resume');
 Route::get('/test', 'BaseController@test');
