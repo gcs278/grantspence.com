@@ -4,10 +4,10 @@
 <head>
     <title>Grant Spence - Computer Engineer</title>
     <script src="js/jquery-2.1.0.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap-theme.min.css">
        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     
@@ -15,7 +15,7 @@
     <meta name="keywords" content="Grant Spence, Virginia Tech, Mountain Biking">
     <meta name="author" content="Grant Spence">
     <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="/js/jquery.mousewheel-3.0.6.pack.js"></script>
 
     <!-- Add fancyBox main JS and CSS files -->
     <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
@@ -34,9 +34,6 @@
     <!--<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-     <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
-    <script src="bower_components/chartist/dist/chartist.min.js"></script>
-
     <script type="text/javascript" src="js/skrollr.min.js"></script>
 
     <style type="text/css">
@@ -54,8 +51,8 @@
 <body id="main" class="resume" data-0="background-color: rgb(255,255,255);" data-100="background-color: rgb(255,255,255);">
 @elseif ( Request::is('development') )
 <body id="main" class="dev">
-@elseif ( Request::is('mountbike') )
-<body id="main" class="mbike">
+@elseif ( Request::is('blog') )
+<body id="main" class="blog">
 @endif
     <div id="page">
         <nav class="navbar" id="lower_nav" role="navigation">
@@ -89,7 +86,7 @@
                     </li>
 
                     <li class="nav_link">
-                        <a href="/development">Development</a>
+                        <a href="/development">Projects</a>
                             <?php
                             if ( Request::is('development') )
                                 echo '<hr class="underline">'
@@ -123,7 +120,7 @@
 					<a href="/">Grant Spence</a>
 				</div> -->
                 <div id="copyright">
-                    Developed and Designed by Grant Spence &copy; 2015
+                    Developed and Designed by Grant Spence &copy; 2016
                 </div>
             </div>
         </footer>

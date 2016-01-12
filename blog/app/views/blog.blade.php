@@ -1,8 +1,8 @@
 @extends('layout')
 @section('content')
-<div class="sideways-large">
+<!-- <div class="sideways-large">
 DEVELOPMENT
-</div>
+</div> -->
 <div class="container">
     <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -17,21 +17,9 @@ DEVELOPMENT
 
     <div class="row header">
         <div class="col-md-8 col-md-offset-2">
-        <?php
-            if ( is_single() ) :
-                the_title( '<h1 class="entry-title">', '</h1>' );
-            else :
-                the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-            endif;
-        ?>
-        </div>
-    </div>
-    <div class="row post_img">
-        <div class="col-md-12">
-            <?php
-                // Post thumbnail.
-                // the_post_thumbnail( 'post-thumbnail', array( 'alt' => get_the_title(), 'class'=>'center-block') );
-            ?>
+            <h2 class="entry-title">
+                {{$page->post_title}}
+            </h2>
         </div>
     </div>
     <div class="row content">

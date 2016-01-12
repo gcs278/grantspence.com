@@ -23,6 +23,7 @@ Route::get('/', function()
 
 Route::get('/', 'BaseController@home');
 Route::get('/blog', 'BaseController@blog');
+Route::get('/blog/{name}','BaseController@post');
 Route::get('/development', 'BaseController@development');
 Route::get('/resume', 'BaseController@resume');
 Route::get('/test', 'BaseController@test');

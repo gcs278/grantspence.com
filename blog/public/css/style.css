@@ -1,6 +1,12 @@
 @font-face {
-    font-family: VTFont;
-    src: url(Raleigh.ttf);
+  font-family: 'entypo';
+  font-style: normal;
+  font-weight: normal;
+  src: url('http://weloveiconfonts.com/api/fonts/entypo/entypo.eot');
+  src: url('http://weloveiconfonts.com/api/fonts/entypo/entypo.eot?#iefix') format('eot'), 
+  url('http://weloveiconfonts.com/api/fonts/entypo/entypo.woff') format('woff'), 
+  url('http://weloveiconfonts.com/api/fonts/entypo/entypo.ttf') format('truetype'), 
+  url('http://weloveiconfonts.com/api/fonts/entypo/entypo.svg#entypo') format('svg');
 }
 @font-face {
     font-family: aargh;
@@ -144,7 +150,7 @@ h1, h2, h3, h4, h5 {
     max-width: 150px;
 }
 #lower_nav {
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     /*height: 50px;*/
     background-color: rgba(0,0,0,0);
@@ -222,7 +228,7 @@ a {
     padding-left: 0px;
     margin-bottom: 50px;
 }
-#container_right h2, h1 {
+#container_right h2 {
     display: inline;
     padding-top: 25px;
 }
@@ -557,7 +563,7 @@ html, body {
 }
 
 #main-wrapper {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 /* New stuff */
 #main {
@@ -572,11 +578,11 @@ html, body {
   background-size: cover;
 }
 #main.dev {
-/*    background: no-repeat center center fixed;
+    background: url('/img/project.jpeg')no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
+    background-size: cover;
 }
 #main.mbike {
 /*    background: url('/img/mbike_back2.jpg') no-repeat center center fixed;
@@ -603,6 +609,7 @@ html, body {
     #main.home #lower_nav a {
         color: black;
     }
+
     #main.resume .icon-bar {
         background-color: white;
     }
@@ -613,11 +620,14 @@ html, body {
 #main.resume #lower_nav a {
     color: black;
 }
-#main.mbike #lower_nav a {
-    color: black;
-}
+    #main.blog #lower_nav a {
+        color: black;
+    }
 #main.dev .icon-bar {
     /*background-color: white;*/
+}
+#main.dev #lower_nav a {
+
 }
 #main #bgvid {
     position: fixed;
@@ -641,12 +651,6 @@ html, body {
     position: fixed;
     top:0px;
     border-radius: 5px;
-    /*min-height: 100vh;*/
-    /*padding-bottom: 100px;*/
-/*    -moz-transform: skew(-15deg,0deg);
-    -ms-transform: skew(-15deg,0deg);
-    -o-transform: skew(-15deg,0deg);
-    transform: skew(-15deg,0deg);*/
 }
 .letstalk {
     width: 300px;
@@ -694,13 +698,16 @@ html, body {
 .tall {
     position: relative;
     text-align: center;
-    height: 95vh;
+    height: 85vh;
     margin-top: 50px;
 }
 .tall p {
     position: relative;
     font-size: 75px;
     margin-bottom: 0px;
+}
+.dev .tall {
+    height: 30vh;
 }
 .tall p:hover {
     text-decoration: none;
@@ -779,9 +786,6 @@ html, body {
     opacity: 0.9;
     /*float: right;*/
 }
-.adventures h1 {
-    display: block;
-}
 .desc {
     position: absolute;
     color: black;
@@ -801,10 +805,11 @@ html, body {
 .desc-middle {
     position: absolute;
     left: 50%;
-    margin-top: -75px;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    top: 47%;
+    margin-top: -50px;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    top: 50%;
     color: white;
 }
 
@@ -843,12 +848,6 @@ div, a, h1, h2, h3, h4, h5, p, h6, li {
 }
 .mbike-thumb {
     height: 125px;
-}
-.dev li {
-    color: white;
-}
-strong {
-    color: white;
 }
 .inline {
     display: inline;
@@ -1156,18 +1155,20 @@ strong {
     transform: skew(5deg) rotate(5deg);
 }
 .sheet h1, .sheet h2, .sheet h3, .sheet h4, .sheet h5, .sheet p, .sheet li, .sheet div{
-    font-family: gothic;
+    font-family: SSP_reg;
 }
 .title h1 {
-    font-size: 70px;
+    font-size: 50px;
+    font-family: dosis;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 .title h3 {
     margin-top: 0px;
     margin-left: 5px;
 }
 .title h3 {
-    font-family: gothic;
+    font-family: dosis;
     font-size: 25px;
     color: #888888;
 }
@@ -1181,6 +1182,7 @@ strong {
 }  
 .sheet .profile {
     right: 60px;
+    z-index: 10;
     top: 60px;
     position: absolute;
 }
@@ -1191,6 +1193,23 @@ strong {
     display: block;
     z-index: 100;
     /*font-size: 20px;*/
+}
+.sheet .profile .social__item {
+    font-size: 6.5px;
+}
+.sheet .profile .social__icon--linkedin {
+    /*background-color: black;*/
+}
+.sheet .profile .social {
+    text-align: center;
+    margin-top: 5px;
+}
+.sheet .profile .social p {
+    margin-top: 5px;
+    font-size: 15px;
+}
+.sheet .profile .social span {
+    font-size: 18px;
 }
 .sheet .profile .in img {
     height: 20px;
@@ -1218,6 +1237,7 @@ strong {
 }
 .sheet .profile .git {
     color: #888888;
+    float: left;
     text-align: center;
 }
 .interest {
@@ -1226,9 +1246,11 @@ strong {
 }
 h3.sideways {
     color: #888888;
+    font-family: dosis;
     transform: rotate(-90deg) translate(-100%, 0);
     transform-origin: 0 0;
     margin: 0 0 0 0;
+    font-size: 21px;
     /*float: left;*/
     /*padding:50% 0;*/
     padding-left: 10px;
@@ -1270,25 +1292,29 @@ h3.sideways {
 }
 .inside h3 {
     position: relative;
-    font-size: 30px;
-    margin-top: 0px;
+    font-size: 22px;
+    font-family: dosis_med;
+    margin-top: -10px;
     margin-bottom: 0px;
 }
 .inside h4 {
     position: relative;
     color: #888888;
+    font-family: dosis;
+    font-size: 18px;
     margin-top: 0px;
     margin-bottom: 3px;
 }
 .inside h5 {
     position: relative;
     margin-top: 0px;
-    font-size: 18px;
+    font-size: 15px;
 }
 .objective p {
-    font-size: 19px;
+    font-size: 15px;
     margin-top: 0px;
     display: inline;
+    font-family: SSP_reg;
     /*font-family: SSP;*/
     /*margin-left: 20px;*/
 }
@@ -1317,6 +1343,7 @@ h3.sideways {
 }
 .resume-section {
     margin-bottom: 10px;
+    z-index: 1;
 }
 .skills .list h3 {
     font-style: italic;
@@ -1346,16 +1373,11 @@ h3.sideways {
     margin-left: 0px;
     margin-right: 0px;
 }
-.education h4 {
-    font-size: 22px;
-}
-.education h5 {
-    font-size: 18px;
-}
 .skills .left {
     color: #888888;
-    font-size: 35px;
+    font-size: 25px;
     text-align: left;
+    font-family: dosis;
     line-height: 100%;
     margin-bottom: 5px;
     /*transform: rotate(-90deg) translate(-100%, 30%);
@@ -1367,8 +1389,13 @@ h3.sideways {
     position: relative;*/
 }
 .skills .right {
-    font-size: 20px;
+    font-size: 17px;
+    color: black;
     line-height: 105%;
+}
+.skills .right div {
+    font-family: dosis_med !important;
+
 }
 .skills .row {
     /*margin-bottom: 0px;*/
@@ -1394,11 +1421,11 @@ h3.sideways {
 
 .awards .time {
     color: #888888;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .awards .award {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .sideways-large {
@@ -1438,7 +1465,7 @@ h3.sideways {
 
 .itsme img {
     height: 125px;
-    margin-top: 50px;
+    margin-top: 10px;
     border-radius:50%;
 }
 
@@ -1486,11 +1513,40 @@ h3.sideways {
 .dev_intro {
 }
 .dev_intro h1 {
+    text-align: center;
     display: block;
+    font-family: dosis;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 25px;
     /*font-size: 75px;*/
+}
+.dev_intro h2 {
+    font-family: dosis_med;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.dev_intro h4 {
+    color: #888;
+    font-size: 16px;
+    margin-top: 3px;
+}
+.dev_intro h5 {
+    color: #222;
+    font-family: dosis;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font-size: 16px;
 }
 .dev_intro img {
     /*display: block;*/
+}
+.dev_intro ol {
+    padding-left: 16px;
+}
+.dev_intro li {
+    margin-bottom: 5px;
 }
 .desc-middle .fancy {
     font-family: garamond;
@@ -1508,4 +1564,225 @@ h3.sideways {
 }
 .strikethrough:after{
     margin:0 -55% 0 2%;
+}
+.black-curtain {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    /*margin-bottom: 400px;*/
+}
+.black-curtain.full {
+    min-height: 100vh;
+}
+
+.home_intro {
+    text-align: center;
+    font-family: dosis;
+}
+
+.home_intro h1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 40px;
+    font-family: dosis;
+}
+.home_intro h3 {
+    font-family: garamond;
+    font-style: italic;
+    font-size: 40px;
+}
+.home_intro .circle {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 0px;
+    border: none;
+}
+.home_intro p {
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+section.parallax-back {
+  height: 600px;
+  background-image: url('/img/night.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.intro .square  {
+    height: 200px;
+    width: auto;
+    margin-right: 40px;
+}
+.image-text {
+    position: relative;
+    display: inline-block;
+}
+.image-text span {
+    position: absolute;
+    top: 75px;
+    left: -20px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+}
+.link-box {
+    border: 2px solid rgb(51,51,51);
+/*    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);*/
+    width: 200px;
+    display: inline-block;
+    font-family: dosis;
+    font-size: 40px;
+    padding: 15px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+.link-box:hover {
+-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    text-decoration: none;
+    color: inherit;
+}
+.link-box-section {
+    margin-bottom: 65px;
+}
+.icon--linkedin::before {
+  content: "";
+}
+
+.social__icon--linkedin {
+  background-color: #0087be;
+}
+.social__icon--linkedin:hover {
+  background-color: #0073a2;
+}
+.social__item {
+  display: inline-block;
+  margin-right: 0.8em;
+}
+.social__item a:hover {
+    text-decoration: none;
+}
+.social__item a:hover i{
+    color: white;
+}
+.social__item:last-child {
+    margin-right: 0px;
+}
+
+.icon, [class^="icon--"] {
+  font-family: 'entypo';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon--rss::before {
+  content: "";
+}
+
+.social__icon--rss {
+  background-color: #FB7629;
+}
+.social__icon--rss:hover {
+  background-color: #d56423;
+}
+.social__icon, [class^="social__icon"] {
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 100%;
+  width: 2.2em;
+  height: 2.2em;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.icon--github::before {
+  content: "";
+}
+
+.social__icon--github {
+  background-color: #333333;
+}
+.social__icon--github:hover {
+  background-color: #2b2b2b;
+}
+.icon--facebook::before {
+  content: "";
+}
+
+.social__icon--facebook {
+  background-color: #4b70ab;
+}
+.social__icon--facebook:hover {
+  background-color: #405f91;
+}  
+.social p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: garamond;
+    margin-bottom: 0px;
+}
+.social p span {
+    font-size: 27px;
+}
+.social {
+    margin-bottom: 20px;
+}
+.intro #explore {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: black;
+    font-size: 18px;
+    font-family: garamond;
+    font-style: italic;
+}
+.adventure {
+    margin-top: 15px;
+    text-align: center;
+}
+.adventure h1 {
+    /*font-family: garamond;*/
+    margin-top: 15px;
+}
+.adventure .square {
+    height: 205px;
+    width: 205px;
+    margin-right: 15px;
+}
+.adventure .square:last-child {
+    margin-right: 0px;
+}
+.project {
+    margin-bottom: 20px;
+}
+.project img {
+    margin-top: 6px;
+    margin-left: 25px;
+}
+.project .project_details {
+    margin-left: 37px;
 }

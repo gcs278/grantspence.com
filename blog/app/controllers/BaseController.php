@@ -46,164 +46,55 @@ class BaseController extends Controller {
         }
 		return View::make('home')->withMobile($mobile);
 	}
-
-	public function blog() {
+    
+    public function blog() {
         $page = get_post(5);
 
         return View::make('blog')->with('page', $page);
-	}
+    }
 
-	public function resume() {
-		return View::make('resume');
-	}
+    public function post($name) {
+        Log::info($name);
+        $page = get_page_by_path($name,'OBJECT','post');
+        if ( $page ) {
+            return View::make('dev_detail')->with('page', $page);
+        }
+        else {
+            return "ERROR";
+        }
 
-	public function development() {
-        $posts = get_posts(array('category'=>3));
+    }
 
-		return View::make('development')->with('posts',$posts);
-	}
+    public function resume() {
+        return View::make('resume');
+    }
 
-	public function test() {
-		return View::make('test');
-	}
+    static public function date_compare($a, $b)
+    {
+        $a_custom = get_post_custom($a->ID);
+        $b_custom = get_post_custom($b->ID);
+        if ( array_key_exists('true_date',$a_custom) && array_key_exists('true_date',$b_custom)) {
+            $t1 = strtotime(get_post_custom($a->ID)['true_date'][0]);
+            $t2 = strtotime(get_post_custom($b->ID)['true_date'][0]);
+            return $t2 - $t1;
+        }
+        return 0;
+    }    
 
-	protected function bikePost($bikeStruct) {
-	    // Compute rating
-	    $rating = "";
-	    for($i = 0; $i < 5; $i++) {
-	        if ( $i < $bikeStruct->rating ) 
-	            $rating .= "&#9733;";
-	        else
-	            $rating .= "&#9734;";
-	    }
+    public function development() {
+        $websites = query_posts('category_name=development&category_name=website');
+        $hardwares = query_posts('category_name=development&category_name=hardware');
+        $apps = query_posts('category_name=development&category_name=app');
 
-		$str = <<<EOD
-            <div class="container-fluid bikepost" id="$bikeStruct->id">
-                <div class="row head">
-                    <div class="row titles">
-                        <div class="col-md-6 col-xs-12">
-                            <h1>$bikeStruct->title</h1>
-                        </div>
-                        <div class="col-md-6 col-xs-12" style="position: absolute; bottom: 0; right: 0;">
-                            <h3 class="text-right">$bikeStruct->date</h3>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-                <div class="row nopadding">
-                    <div id="gateway5_11_14_p" class="thumbnails">
-                        <div class="col-md-7 bikecol">
-                            <h2 class="text-left">$bikeStruct->reviewTitle</h2>
-                            <p class="review">
-                                $bikeStruct->review
-                            </p>
-                            <div id="{$bikeStruct->id}_p" class="thumbnails row" style="position: absolute; bottom: 0;">
-EOD;
-		$i = 0;
-		foreach($bikeStruct->picArray as $pic) {
-		    if ( $i < 4 ) {
-		        $str .= <<<EOD
-			        <div class="col-xs-3 nopadding">
-			            <a class="fancybox-thumbs" data-fancybox-group="$bikeStruct->id" href="img/$bikeStruct->picFolder/{$pic}.jpg">
-			                <img src="img/$bikeStruct->picFolder/{$pic}_s.jpg" alt="" />
-			                <span class="text-content"><span>Click for more</span></span>
-			            </a>
-			        </div>
-EOD;
-		    }
-		    else {
-		        $str .= <<<EOD
-			        <a class="fancybox-thumbs hidden" data-fancybox-group="$bikeStruct->id" href="img/$bikeStruct->picFolder/{$pic}.jpg">
-			        </a>
-EOD;
-		    }
-		    $i++;
-		}
+        usort($websites,array($this,'date_compare'));
+        usort($hardwares,array($this,'date_compare'));
+        usort($apps,array($this,'date_compare'));
 
-		$str .= <<<EOD
-                            </div>
-                        </div>
-                        <div class="col-md-5 nopadding bikecol">
-                            <div class="row nopadding">
-                                <div class="rating">
-                                    <div class="row nopadding">
-                                        <div class="col-lg-6 col-md-6 col-xs-6">
-                                            <h4 class="text-left">Rating:</h4>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-xs-6">
-                                            <h4 class="text-right">$rating</h4>
-                                        </div>
-                                    </div>
-                                    <div class="row nopadding">
-                                        <div class="col-lg-6 col-md-6 col-xs-6">
-                                            <h4 class="text-left">Difficulty:</h4>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-xs-6">
-                                            <h4 class="text-right">$bikeStruct->difficulty</h4>
-                                        </div>
-                                    </div>
-                                    <div class="row nopadding">
-                                        <div class="col-lg-6 col-md-6 col-xs-6">
-                                            <h4 class="text-left">Distance:</h4>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-xs-6">
-                                            <h4 class="text-right">$bikeStruct->distance MI</h4>
-                                        </div>
-                                    </div>
-                                    <div class="row nopadding">
-                                        <div class="col-lg-6 col-md-6 col-xs-6">
-                                            <h4 class="text-left">Elevation:</h4>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-xs-6">
-                                            <h4 class="text-right">$bikeStruct->elevation FT</h4>
-                                        </div>
-                                    </div>
-                                    <div class="row nopadding">
-                                        <div class="col-lg-6 col-md-6 col-xs-6">
-                                            <h4 class="text-left">Traffic:</h4>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-xs-6">
-                                            <h4 class="text-right">$bikeStruct->traffic</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row nopadding" style="position: absolute; bottom: 0;">
-                                    <div class="col-md-12 col-centered">
-                                        <!-- <h3 class="text-left">Map</h3> -->
-                                        <div class="map hidden-sm hidden-xs">
-                                            <img src="img/$bikeStruct->mapLoc">
-                                            <img class="elevation_img" src="img/$bikeStruct->eleLoc">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-EOD;
-    return $str;
-}
-
-	public function ajaxMbikePics() {
-		$allpics = File::allFiles('img/mbike');
-
-		$pics = array();
-		foreach($allpics as $pic) {
-			if ( preg_match("@((?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*)_s\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?@",$pic, $result) ) {
-				$large = explode("_s",$pic)[0] . explode("_s",$pic)[1];
-				array_push($pics, array('thumb' => $result[0], 'large' => $large));
-				// var_dump($large);
-			}
-		}
-
-		$left = true;
-		if ( ( Input::get('page')*12 + 12 ) >= count($pics) ) {
-			$left = false;
-		}
-
-		return Response::json(array('results' => array_slice($pics, Input::get('page')*12,12), 'left' => $left));
-	}
-
+        return View::make('development')
+        ->with('websites',$websites)
+        ->with('hardwares',$hardwares)
+        ->with('apps',$apps);
+    }
+    
 
 }

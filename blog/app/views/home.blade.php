@@ -55,64 +55,86 @@ body {
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
-		<div class="row">
-				<div class="white-block" data-0="right:-100%; top: 50px" data-200="right:0%;">
-	                <a href="#content" name="content"></a>
-					<div class="row">
-						<div class="col-md-12 about-me">
-							<h1>What is this?</h1>
-							<p>This is GrantSpence.com - an experimental website developed and designed by yours truly, 
-								Grant Spence. I am a <strong>web developer</strong>, <strong>engineer</strong>, and <strong>aspiring designer</strong>. This website is a 
-								developmental ground for myself to push ideas and display them for the world to see.</p>
+	<div class="black-curtain full">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="home_intro">
+						<img class="circle" src="/img/grant3.jpeg" >
+						<h1 class="strikethrough">GRANT SPENCE</h1>
+						<p>I am dedicated and passionate full stack web developer. My objective in life is to never stop learning about technology and eventually contribute to developing new technologies.
+						My career goal is to develop web-based technology and design that inspire.</p>
+						<!-- <p id="explore">Please explore my site and let me know what you think!</p> -->
+						<div class="link-box-section">
+							<a href="/resume" class="link-box clickable">
+								RESUME
+							</a>
+							<a href="/development" class="link-box clickable">
+								PROJECTS
+							</a>
+							<a href="/blog" class="link-box clickable">
+								BLOG
+							</a>
 						</div>
-						
-<!-- 						<div class="row links">
-							<div class="col-md-10 col-centered">
-								<div class="col-md-4">
-									<a href="/mountbike">
-										<h2 class="text-center">Mountain Biking</h2>
-										<div><?php echo HTML::image('img/white_mount.png', 'Grant Spence', array('class'=>'mountain_clip'));?></div>
-									</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/resume">
-										<h2 class="text-center">Resume</h2>
-										<?php echo HTML::image('img/resume-icon.png', 'Grant Spence', array('class'=>'mountain_clip'));?>
-									</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/development">
-										<h2 class="text-center">Development</h2>
-										<?php echo HTML::image('img/chip.png', 'Grant Spence', array('class'=>'chip_icon'));?>
-									</a>
-								</div>
-							</div>
+						<!-- <div class="image-text">
+							<img class="circle" src="/img/desk2.jpg">
+							<span>Projects</span>
 						</div> -->
+						<h3>Want to talk business?</h3>
+						<div class="social">
+							<div class="social__item">
+					            <a target="_blank" href="https://www.linkedin.com/in/gcs278" class="social__icon--linkedin">
+					            	<i class="icon--linkedin"></i>
+					            </a>
+						    </div>
+						    <div class="social__item">
+					            <a target="_blank" href="https://github.com/gcs278" class="social__icon--github">
+			            	<i class="icon--github"></i></a>
+						    </div>
+						    <div class="social__item">
+					            <a target="_blank" href="hhttps://www.facebook.com/GrantSpence" class="social__icon--facebook">
+					            	<i class="icon--facebook"></i></a>
+						    </div>
+							<p>GCS278<span>@</span>VT.EDU</p>
+						</div>
 					</div>
 				</div>
-				<div class="white-block" data-150="left:-100%; top: 50%" data-350="left:0%;">
-					<div class="row">
-						<div class="col-md-12 about-me">
-							<h1>About Me</h1>
-							<?php //echo HTML::image('img/grant2.jpg', 'Grant Spence');?>
-							<p>I am a motivated and dedicated student that has developed a great passion 
+			</div>
+		</div>
+	</div>
+	<!-- <section class="parallax-back">
+		<div class="container">
+				<div class="row">
+					<div class="md-col-12">
+						<div class="tall">
+							<div class="desc-middle clickable">
+								<p>ADVENTURER</p>
+								<p class="fancy strikethrough">No boundaries</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+		
+	<div class="black-curtain">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="adventure">
+						<h1>I like to explore</h1>
+						<img class="square" src="/img/hike.JPG" >
+						<img class="square" src="/img/hike2.JPG" >
+						<img class="square" src="/img/hike3.JPG" >
+						<p>I am a motivated and dedicated student that has developed a great passion 
 								for my major. My objective in life is to never stop learning about 
 								technology and eventually contribute to developing new technologies. 
 								On the job and in college I have fun learning about how things work. It 
 								fills me with a sense of excitement and passion.</p>
-						</div>
 					</div>
-				</div>
-				<a class="letstalk clickable" href="/resume" data-350="top:100%" data-450="top:35%">
-					<p>Want to talk business?</p>
-					<p>Explore my resume</p>
-				</a>
-				<div class="attention" data-450="top:100%" data-500="top:5%">
-					<?php echo HTML::image('img/chalk_arrow.png', 'Grant Spence');?>
 				</div>
 			</div>
 		</div>
-		
+	</div> -->
 
 @stop

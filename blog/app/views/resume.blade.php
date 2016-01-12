@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-	<div class="row front-container">
+<!-- 	<div class="row front-container">
 			<div class="desc-middle" data-0="left: 50%; top: 70%;">
 				<img class="circle" src="/img/grant3.jpeg" data-0="height: 150px; width: 150px; top: -150px;" data-200="height:0px; width: 0px; top: -75px; text-align: left;">
 				<div data-0="font-size: 40px" data-200="font-size: 20px">FULL STACK WEB DEVELOPER</div>
@@ -13,20 +13,28 @@
 					<div class="res-nav" data-0="width: 100px; height: 100px; font-size: 20px; line-height: 100px;" data-200="width:50px; height: 50px; font-size: 12px;line-height: 50px;">AWARDS</div>
 				</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="intro">
 				<div class="sheet">
 					<div class="profile">
 						<img class="pic" src="/img/grant3.jpeg">
-						<a href="http://www.linkedin.com/pub/grant-spence/63/7a5/157/" target="_blank" class="in">
-							<img src="/img/linkedin.png">
-							<span>LinkedIn</span>
-						</a>
-						<div class="git">
-							<img src="/img/github.png">
-							<span>Github</span>
+						<div class="social">
+							<div class="social__item">
+					            <a target="_blank" href="https://www.linkedin.com/in/gcs278" class="social__icon--linkedin">
+					            	<i class="icon--linkedin"></i>
+					            </a>
+						    </div>
+						    <div class="social__item">
+					            <a target="_blank" href="https://github.com/gcs278" class="social__icon--github">
+			            	<i class="icon--github"></i></a>
+						    </div>
+						    <div class="social__item">
+					            <a target="_blank" href="hhttps://www.facebook.com/GrantSpence" class="social__icon--facebook">
+					            	<i class="icon--facebook"></i></a>
+						    </div>
+							<p>GCS278<span>@</span>VT.EDU</p>
 						</div>
 					</div>
 					<div class="row">
@@ -48,7 +56,7 @@
 								<div class="resume-box">
 									<p>
 										I am dedicated and passionate full stack web developer. My objective in life is to never stop learning about technology and eventually contribute to developing new technologies.
-										My career goal is to develop web-based technology that inspire.
+										My career goal is to develop web-based technology and design that inspire.
 									</p>
 								</div>
 							</div>
@@ -70,7 +78,7 @@
 										<div class="inside">
 											<h3>BS, Computer Engineering (CPE)</h3>
 											<h4>Virginia Tech, May 2015</h4>
-											<h5>Minor in computer science with a focus on network engineering</h5>
+											<!-- <h5>Minor in computer science with a focus on network engineering</h5> -->
 										</div>
 									</div>
 								</div>
