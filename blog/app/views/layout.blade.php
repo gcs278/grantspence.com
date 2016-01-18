@@ -33,23 +33,19 @@
     <meta property="og:image"              content="http://grantspence.com/img/grant3.jpeg" />
     <meta property="fb:app_id"              content="800590736740191" />
 
+    <!--JS and CSS Links Includes-->
     <script src="/js/jquery-2.2.0.min.js"></script>
-    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     
     <meta name="description" content="Grant Spence Computer Engineer">
-    <meta name="keywords" content="Grant Spence, Virginia Tech, Mountain Biking">
+    <meta name="keywords" content="An experimental website and blog in which I can push ideas for the world to see. My portfolio, projects, hacks, and how-to’s.">
     <meta name="author" content="Grant Spence">
-
-    <!-- Add fancyBox main JS and CSS files -->
-    <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
-    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
-
-    <!-- Add Media helper (this is optional) -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
 </head>
 @if( Request::is('/') )
