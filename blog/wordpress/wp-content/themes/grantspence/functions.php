@@ -33,7 +33,6 @@
 if ( ! isset( $content_width ) ) {
 	$content_width = 660;
 }
-
 /**
  * Twenty Fifteen only works in WordPress 4.1 or later.
  */
@@ -320,6 +319,35 @@ function twentyfifteen_nav_description( $item_output, $item, $depth, $args ) {
 }
 add_filter( 'walker_nav_menu_start_el', 'twentyfifteen_nav_description', 10, 4 );
 
+function grantspence_callback($comment, $args, $depth) { ?>
+<div class="comment-section">
+ <a id="comment-<?php comment_ID();?>"></a>
+ <div class="row">
+ 	<div class="col-md-1 col-sm-1 col-xs-2">
+		<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+ 	</div>
+ 	<div class="col-md-11 col-sm-11 col-xs-10">
+ 		<div class="comment-info">
+			<span class="comment-author"><?php echo get_comment_author_link() ?></span>
+	 		<span class="comment-date"><?php printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time() ); ?></span>
+	 	</div>
+ 	</div>
+ </div>
+ <div class="row">
+ 	<div class="col-md-12 col-sm-12 col-xs-12">
+ 		<div class="comment-text">
+			<?php comment_text(); ?>
+		</div>
+		<?php if ($comment->comment_approved == '0') : ?>
+		<p class="moderation">Your comment is awaiting moderation.</p>
+		<?php endif; ?>
+		<?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+ 	</div>
+ </div>
+</div>
+<?php
+}
+
 /**
  * Add a `screen-reader-text` class to the search form's submit button.
  *
@@ -332,6 +360,49 @@ function twentyfifteen_search_form_modify( $html ) {
 	return str_replace( 'class="search-submit"', 'class="search-submit screen-reader-text"', $html );
 }
 add_filter( 'get_search_form', 'twentyfifteen_search_form_modify' );
+
+add_filter( 'comment_form_default_fields', 'bootstrap3_comment_form_fields' );
+function bootstrap3_comment_form_fields( $fields ) {
+    $commenter = wp_get_current_commenter();
+    
+    $req      = get_option( 'require_name_email' );
+    $aria_req = ( $req ? " aria-required='true'" : '' );
+    $html5    = current_theme_supports( 'html5', 'comment-form' ) ? 1 : 0;
+    
+    $fields   =  array(
+        'author' => '<div class="form-group comment-form-author">' . '<label for="author">' . __( 'Name' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+                    '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div>',
+        'email'  => '<div class="form-group comment-form-email"><label for="email">' . __( 'Email' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+                    '<input class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div>',
+        'url'    => '<div class="form-group comment-form-url"><label for="url">' . __( 'Website' ) . '</label> ' .
+                    '<input class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div>'        
+    );
+    
+    return $fields;
+}
+
+add_filter( 'comment_form_defaults', 'bootstrap3_comment_form' );
+function bootstrap3_comment_form( $args ) {
+    $args['comment_field'] = '<div class="form-group comment-form-comment">
+            <label for="comment">' . _x( 'Comment', 'noun' ) . '</label> 
+            <textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+        </div>';
+    $args['class_submit'] = 'btn btn-default'; // since WP 4.1
+    
+    return $args;
+}
+add_filter( 'preprocess_comment', 'wpb_preprocess_comment' );
+
+function wpb_preprocess_comment($comment) {
+    if ( strlen( $comment['comment_content'] ) > 5000 ) {
+        wp_die('Comment is too long. Please keep your comment under 5000 characters.');
+    }
+    return $comment;
+}
+add_action('comment_form', 'bootstrap3_comment_button' );
+function bootstrap3_comment_button() {
+    echo '<button class="btn btn-primary" type="submit">' . __( 'Submit' ) . '</button>';
+}
 
 /**
  * Implement the Custom Header feature.

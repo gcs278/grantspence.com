@@ -1,60 +1,18 @@
 @extends('layout')
 @section('content')
-<!-- Add fancyBox main JS and CSS files -->
-<script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
-<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
-
-<!-- Add Button helper (this is optional) -->
-<link rel="stylesheet" type="text/css" href="fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
-<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-
-<!-- Add Thumbnail helper (this is optional) -->
-<link rel="stylesheet" type="text/css" href="fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
-<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
-<!-- Add Media helper (this is optional) -->
-<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-
-<style type="text/css">
-.fancybox-custom .fancybox-skin {
-    box-shadow: 0 0 50px #222;
-}
-body {
-    margin: 0 auto;
-}
-</style>
-
-
-<style type="text/css">
-#map-canvas {
-    height: 500px;
-    width: 90%;
-    margin: 0px auto;
-}
-</style>
-	@if (!$mobile)
-		<video autoplay muted loop id="bgvid">
-			<!-- <source src="/img/mounts.mp4" type="video/mp4"> -->
-		</video>
-	@endif
 	<div class="container">
 		<div class="row">
 			<div class="md-col-12">
 				<div class="tall">
-					<div class="desc hidden-xs">
-						<!-- <p>ROCKY MOUNTAINS<br>6/13/15</p> -->
-					</div>
-
 					<div class="desc-middle clickable">
-						<!-- <img class="circle" src="/img/grant3.jpeg" > -->
-						<p>WEB DEVELOPER</p>
-						<p class="fancy strikethrough">Aspiring Designer</p>
-						<!-- <img src="/img/black-arrow.png" class="down-arrow" id="down-arrow"> -->
+						<p class="headline">WEB DEVELOPER</p>
+						<p class="fancy strikethrough">And much more</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<div class="black-curtain full">
 		<div class="container-fluid">
 			<div class="row">
@@ -62,9 +20,7 @@ body {
 					<div class="home_intro">
 						<img class="circle" src="/img/grant3.jpeg" >
 						<h1 class="strikethrough">GRANT SPENCE</h1>
-						<p>I am dedicated and passionate full stack web developer. My objective in life is to never stop learning about technology and eventually contribute to developing new technologies.
-						My career goal is to develop web-based technology and design that inspire.</p>
-						<!-- <p id="explore">Please explore my site and let me know what you think!</p> -->
+						<p>I am a dedicated and passionate full stack web developer. My objective in life is to never stop learning about technology and contribute to developing new technologies. My career goal is to develop web-based technology and design that inspire.</p>
 						<div class="link-box-section">
 							<a href="/resume" class="link-box clickable">
 								RESUME
@@ -76,10 +32,6 @@ body {
 								BLOG
 							</a>
 						</div>
-						<!-- <div class="image-text">
-							<img class="circle" src="/img/desk2.jpg">
-							<span>Projects</span>
-						</div> -->
 						<h3>Want to talk business?</h3>
 						<div class="social">
 							<div class="social__item">

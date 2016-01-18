@@ -3,59 +3,46 @@
 <!-- <div class="sideways-large">
 DEVELOPMENT
 </div> -->
+<?php global $post;
+    $post = $page;
+    setup_postdata($post);
+    global $withcomments;
+$withcomments = 1;
+        ?>
+
 <div class="container">
     <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+        <div class="row itsme">
+                <div class="center-block text-center">
+                    <img class="img-center" src="/img/grant3.jpeg<?php //echo wp_get_attachment_image_src( 18, 'large' )[0]; ?>"> 
+                    <p class="text-center name">Grant Spence</p>
+                    <p class="date">October 28th, 2015</p>
+                </div>
+        </div>
 
-    <div class="row itsme">
-            <div class="center-block text-center">
-                <img class="img-center" src="/img/grant3.jpeg<?php //echo wp_get_attachment_image_src( 18, 'large' )[0]; ?>"> 
-                <p class="text-center name">Grant Spence</p>
-                <p class="date">October 28th, 2015</p>
+        <div class="row header">
+            <div class="col-md-8 col-md-offset-2">
+                <h2 class="entry-title">
+                    {{$page->post_title}}
+                </h2>
             </div>
-    </div>
-
-    <div class="row header">
-        <div class="col-md-8 col-md-offset-2">
-            <h2 class="entry-title">
-                {{$page->post_title}}
-            </h2>
         </div>
-    </div>
-    <div class="row content">
-        <div class="col-md-8 col-md-offset-2">
-        <?php
-            /* translators: %s: Name of current post */
-            echo do_shortcode($page->post_content);
-            the_content( sprintf(
-                __( 'Continue reading %s', 'twentyfifteen' ),
-                the_title( '<span class="screen-reader-text">', '</span>', false )
-            ) );
-
-            wp_link_pages( array(
-                'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
-                'after'       => '</div>',
-                'link_before' => '<span>',
-                'link_after'  => '</span>',
-                'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
-                'separator'   => '<span class="screen-reader-text">, </span>',
-            ) );
-        ?>
+        <div class="row content">
+            <div class="col-md-8 col-md-offset-2">
+            <?php
+                echo do_shortcode($page->post_content);
+            ?>
+            </div>
+        </div><!-- .entry-content -->
+        <div class="row comment-wrapper">
+            <div class="col-md-6 col-md-offset-3">
+                <?php if ( comments_open() || get_comments_number() ) :
+                    comments_template();
+                endif;
+                ?>
+            </div>
         </div>
-    </div><!-- .entry-content -->
-
-    <?php
-        // Author bio.
-        if ( is_single() && get_the_author_meta( 'description' ) ) :
-            get_template_part( 'author-bio' );
-        endif;
-    ?>
-
-    <footer class="entry-footer">
-        <?php twentyfifteen_entry_meta(); ?>
-        <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
-    </footer><!-- .entry-footer -->
-
-</div><!-- #post-## -->
+    </div><!-- #post-## -->
 </div>
 @stop

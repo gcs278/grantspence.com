@@ -20,13 +20,14 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<div class="comments">
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
+			Responses
 			<?php
-				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'twentyfifteen' ),
-					number_format_i18n( get_comments_number() ), get_the_title() );
+				// printf( _nx( 'Thought on &ldquo;%2$s&rdquo;', 'Thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'twentyfifteen' ),
+					// number_format_i18n( get_comments_number() ), get_the_title() );
 			?>
 		</h2>
 
@@ -34,10 +35,13 @@ if ( post_password_required() ) {
 
 		<ol class="comment-list">
 			<?php
+
 				wp_list_comments( array(
-					'style'       => 'ol',
+					// 'style'       => 'ol',
 					'short_ping'  => true,
 					'avatar_size' => 56,
+					'callback' => 'grantspence_callback',
+					'reverse_top_level' => true
 				) );
 			?>
 		</ol><!-- .comment-list -->

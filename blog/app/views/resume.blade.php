@@ -15,49 +15,80 @@
 		</div>
 	</div> -->
 	<div class="row">
+		<div class="hidden-lg hidden-md hidden-sm col-xs-8 col-xs-offset-2">
+			<div class="profile profile-xs">
+				<!-- <img class="pic" src="/img/grant3.jpeg"> -->
+				<div class="social">
+					<div class="social__item">
+			            <a target="_blank" href="https://www.linkedin.com/in/gcs278" class="social__icon--linkedin">
+			            	<i class="icon--linkedin"></i>
+			            </a>
+				    </div>
+				    <div class="social__item">
+			            <a target="_blank" href="https://github.com/gcs278" class="social__icon--github">
+	            	<i class="icon--github"></i></a>
+				    </div>
+				    <div class="social__item">
+			            <a target="_blank" href="https://www.facebook.com/GrantSpence" class="social__icon--facebook">
+			            	<i class="icon--facebook"></i></a>
+				    </div>
+					<p>GCS278<span>@</span>VT.EDU</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="intro">
 				<div class="sheet">
-					<div class="profile">
-						<img class="pic" src="/img/grant3.jpeg">
-						<div class="social">
-							<div class="social__item">
-					            <a target="_blank" href="https://www.linkedin.com/in/gcs278" class="social__icon--linkedin">
-					            	<i class="icon--linkedin"></i>
-					            </a>
-						    </div>
-						    <div class="social__item">
-					            <a target="_blank" href="https://github.com/gcs278" class="social__icon--github">
-			            	<i class="icon--github"></i></a>
-						    </div>
-						    <div class="social__item">
-					            <a target="_blank" href="hhttps://www.facebook.com/GrantSpence" class="social__icon--facebook">
-					            	<i class="icon--facebook"></i></a>
-						    </div>
-							<p>GCS278<span>@</span>VT.EDU</p>
-						</div>
-					</div>
 					<div class="row">
-						<div class="col-md-6">
-							<div class="title">
-								<h1>GRANT SPENCE</h1>
-								<h3>Full Stack Web Developer</h3>
+						<div class="col-md-9 col-sm-9 col-xs-12">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<div class="title">
+										<h1>GRANT SPENCE</h1>
+										<h3>Full Stack Web Developer</h3>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="row relative resume-section">
+								<div class="vertical-line"></div>
+								<div class="col-md-1 col-sm-1 col-xs-2">
+									<h3 class='sideways'>OBJECTIVE</h3>
+								</div>
+								<div class="col-md-11 col-sm-11 col-xs-10">
+									<div class="objective">
+										<div class="resume-box">
+											<p>
+												I am a dedicated and passionate full stack web developer. 
+												My objective in life is to never stop learning about technology and contribute to developing new technologies. 
+												My career goal is to develop web-based technology and design that inspire.
+											</p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-
-					<div class="row relative resume-section">
-						<div class="vertical-line"></div>
-						<div class="col-md-1">
-							<h3 class='sideways'>OBJECTIVE</h3>
-						</div>
-						<div class="col-md-8">
-							<div class="objective">
-								<div class="resume-box">
-									<p>
-										I am dedicated and passionate full stack web developer. My objective in life is to never stop learning about technology and eventually contribute to developing new technologies.
-										My career goal is to develop web-based technology and design that inspire.
-									</p>
+						<div class="col-md-3 col-sm-3 hidden-xs">
+							<div class="profile">
+								<img class="pic" src="/img/grant3.jpeg">
+								<div class="social">
+									<div class="social__item">
+							            <a target="_blank" href="https://www.linkedin.com/in/gcs278" class="social__icon--linkedin">
+							            	<i class="icon--linkedin"></i>
+							            </a>
+								    </div>
+								    <div class="social__item">
+							            <a target="_blank" href="https://github.com/gcs278" class="social__icon--github">
+					            	<i class="icon--github"></i></a>
+								    </div>
+								    <div class="social__item">
+							            <a target="_blank" href="https://www.facebook.com/GrantSpence" class="social__icon--facebook">
+							            	<i class="icon--facebook"></i></a>
+								    </div>
+									<p>GCS278<span>@</span>VT.EDU</p>
 								</div>
 							</div>
 						</div>
@@ -65,16 +96,16 @@
 
 					<div class="row relative resume-section">
 						<div class="vertical-line"></div>
-						<div class="col-md-1">
+						<div class="col-md-1 col-sm-1 col-xs-2">
 							<h3 class='sideways'>EDUCATION</h3>
 						</div>
-						<div class="col-md-10">
+						<div class="col-md-10 col-sm-10 col-xs-10">
 							<div class="education">
 								<div class="row">
-									<div class="col-md-3">
-										<img src="/img/VT_Logo.png">
+									<div class="col-md-3 col-sm-3 hidden-xs edu-logo">
+										<img src="/img/VT_Logo2.png">
 									</div>
-									<div class="col-md-9">
+									<div class="col-md-9 col-sm-9 col-xs-12">
 										<div class="inside">
 											<h3>BS, Computer Engineering (CPE)</h3>
 											<h4>Virginia Tech, May 2015</h4>
@@ -83,10 +114,10 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-3">
-										<img src="/img/escc.png">
+									<div class="col-md-3 col-sm-3 hidden-xs edu-logo">
+										<img src="/img/ESCC3.jpeg">
 									</div>
-									<div class="col-md-9">
+									<div class="col-md-9 col-sm-9 col-xs-12">
 										<div class="inside">
 											<h3>Associate of Science</h3>
 											<h4>Eastern Shore Community College, May 2011</h4>
@@ -99,17 +130,17 @@
 
 					<div class="row relative resume-section">
 						<div class="vertical-line"></div>
-						<div class="col-md-1">
+						<div class="col-md-1 col-sm-1 col-xs-2">
 							<h3 class='sideways'>SKILLS</h3>
 						</div>
-						<div class="col-md-9">
+						<div class="col-md-9 col-sm-9 col-xs-9">
 								<div class="skills">
-									<div class="row">
-										<div class="col-md-3">
+									<div class="row equal">
+										<div class="col-md-3 col-sm-3 col-xs-6 col-height">
 											<div class="left">
 												Languages
 											</div>
-											<div class="right">
+											<div class="right top">
 												<div>PHP</div>
 												<div>HTML/CSS</div>
 												<div>Java</div>
@@ -125,11 +156,11 @@
 												<!-- CSS, Java, Javascript, C, C++, Objective C, Ruby, Python, Swift, Verilog/VHDL, SQL -->
 											</div>
 										</div>
-										<div class="col-md-3">
+										<div class="col-md-3 col-sm-3 col-xs-6 col-height">
 											<div class="left">
 												Frameworks
 											</div>
-											<div class="right">
+											<div class="right top">
 												<div>Laravel</div>
 												<div>Node.JS</div>
 												<div>Wordpress</div>
@@ -141,7 +172,7 @@
 												<div>QT</div>
 											</div>
 										</div>
-										<div class="col-md-3">
+										<div class="col-md-3 col-sm-3 col-xs-6 col-height">
 											<div class="left">
 												Plugins
 											</div>
@@ -152,7 +183,7 @@
 											</div>
 										</div>
 
-										<div class="col-md-3">
+										<div class="col-md-3 col-sm-3 col-xs-6 col-height">
 											<div class="left">
 												Databases
 											</div>
@@ -163,49 +194,23 @@
 											</div>
 										</div>
 									</div>
-									<!-- <div class="col-md-12">
-										<div class="bar" style="width:100%">
-											PHP
-										</div>
-										<div class="bar" style="width:100%">
-											HTML, CSS
-										</div>
-										<div class="bar" style="width:95%">
-											Java
-										</div>
-										<div class="bar" style="width:95%">
-											C, C++
-										</div>
-										<div class="bar" style="width:85%">
-											Python
-										</div>
-										<div class="bar" style="width:70%">
-											Ruby
-										</div>
-										<div class="bar" style="width:70%">
-											Objective C
-										</div>
-										<div class="bar" style="width:70%">
-											Swift
-										</div>
-									</div> -->
 							</div>
 						</div>
 					</div>
 
 					<div class="row relative resume-section">
 						<div class="vertical-line"></div>
-						<div class="col-md-1">
+						<div class="col-md-1 col-sm-1 col-xs-2">
 							<h3 class='sideways'>EMPLOYMENT</h3>
 						</div>
-						<div class="col-md-10">
+						<div class="col-md-10 col-sm-10 col-xs-10">
 							<div class="employment">
 								<div class="job">
 									<div class="row">
-										<div class="col-md-3">
-											<img src="/img/marines.png">
+										<div class="col-md-3 col-sm-3 hidden-xs edu-logo">
+											<img src="/img/marine_logo.png">
 										</div>
-										<div class="col-md-9">
+										<div class="col-md-9 col-sm-9 col-xs-12">
 											<div class="inside">
 												<h3>Computer Engineer</h3>
 												<h4>Marine Corps System Command</h4>
@@ -217,10 +222,10 @@
 								</div>
 								<div class="job">
 									<div class="row">
-										<div class="col-md-3">
+										<div class="col-md-3 col-sm-3 hidden-xs edu-logo">
 											<img src="/img/altess.png">
 										</div>
-										<div class="col-md-9">
+										<div class="col-md-9 col-sm-9 col-xs-12">
 											<div class="inside">
 												<h3>Network Engineer</h3>
 												<h4>US Army</h4>
@@ -232,13 +237,13 @@
 								</div>
 								<div class="job">
 									<div class="row">
-										<div class="col-md-3">
+										<div class="col-md-3 col-sm-3 hidden-xs edu-logo">
 											<img src="/img/vt_seal.png">
 										</div>
-										<div class="col-md-9">
+										<div class="col-md-9 col-sm-9 col-xs-12">
 											<div class="inside">
 												<h3>Software Engineer</h3>
-												<h4>Virginia Tech Transportation Institue</h4>
+												<h4>Virginia Tech Transportation Institute</h4>
 												<h5>May 2013 - August 2013</h5>
 											</div>
 										</div>
@@ -251,31 +256,31 @@
 
 					<div class="row relative resume-section awards">
 						<div class="vertical-line"></div>
-						<div class="col-md-1">
+						<div class="col-md-1 col-sm-1 col-xs-2">
 							<h3 class='sideways'>AWARDS</h3>
 						</div>
-						<div class="col-md-9">
+						<div class="col-md-10 col-sm-10 col-xs-10">
 								<div class="row">
-									<div class="col-md-3">
+									<div class="col-md-3 col-sm-3 col-xs-2">
 										<span class="time">July 2013</span>
 									</div>
-									<div class="col-md-9">
+									<div class="col-md-9 col-sm-9 col-xs-10">
 										<span class="award">National Department of Defense SMART Scholarship</span>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-3">
+									<div class="col-md-3 col-sm-3 col-xs-2">
 										<span class="time">Fall 2011</span>
 									</div>
-									<div class="col-md-9">
+									<div class="col-md-9 col-sm-9 col-xs-10">
 										<span class="award">Virginia Tech Lifeline Scholarship</span>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-3">
-										<span class="time">November 2010</span>
+									<div class="col-md-3 col-sm-3 col-xs-2">
+										<span class="time">Fall 2010</span>
 									</div>
-									<div class="col-md-9">
+									<div class="col-md-9 col-sm-9 col-xs-10">
 										<span class="award">Named Top Ten Community College Student by USA Today</span>
 									</div>
 								</div>
@@ -283,88 +288,10 @@
 					</div>
 
 				</div>
-				<script>
-					$(document).ready(function() {
-						var data = {
-						  labels: ['PHP', 'HTML / CSS', 'Javascript','Ruby'],
-						  series: [
-						    [4,4,3,1]
-						  ]
-						};
-
-						var options = {
-						  high: 4,
-						  low: 0,
-						  offset: 20,
-						  height: 400,
-						  width: 650,
-						  chartPadding: 50,
-						  horizontalBars: true,
-						  axisX: {
-						  	// showGrid: false,
-						  },
-						  axisX: {
-						  	offset: 20,
-						  	"font-size": 25,
-							  ticks: [1,2,3,4],
-						    labelInterpolationFnc: function(value){
-						        if ( value == 0 )
-						          return 'I suck';
-						      	else if ( value == 1 )
-						          return 'Decent';
-						       	else if ( value == 2 )
-						          return 'Getting good';
-						      	else if ( value == 3 )
-						          return 'Awesome!';
-						       	else if ( value == 4 )
-											return 'GREAT!';
-						        return 'N/A';
-						    },
-						    onlyInteger: true
-						 
-						}
-						};
-						var chart = new Chartist.Bar('.ct-chart', data, options);
-						chart.on('draw', function(data) {
-						  if(data.type === 'grid' && data.index !== 0) {
-						    data.element.remove();
-						  }
-						  if(data.type === 'label' && data.axis === 'y') {
-						    // We just offset the label X position to be in the middle between the current and next axis grid
-						  }
-						});
-					});
-
-				</script>
 			</div>
+
 		</div>
 	</div>
-		<!-- <div class="black-block">		</div> -->
-<!-- 		<div class="white-block" data-0="right:-100%; top: 50px" data-200="right:0%;">
-	                <a href="#content" name="content"></a>
-					<div class="row">
-						<div class="col-md-12 education">
-							<h1>Education</h1>
-							<p>Virginia Tech - Bachelor of Science, Computer Engineering (CPE)</p>
-							<ul>
-								<li>GPA 3.77 / 4.0</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="white-block" data-150="left:-100%; top: 50%" data-350="left:0%;">
-					<div class="row">
-						<div class="col-md-12 about-me">
-							<h1>About Me</h1>
-							<?php //echo HTML::image('img/grant2.jpg', 'Grant Spence');?>
-							<p>I am a motivated and dedicated student that has developed a great passion 
-								for my major. My objective in life is to never stop learning about 
-								technology and eventually contribute to developing new technologies. 
-								On the job and in college I have fun learning about how things work. It 
-								fills me with a sense of excitement and passion.</p>
-						</div>
-					</div>
-				</div> -->
 </div>
 @stop
 

@@ -2,11 +2,39 @@
 <html>
 
 <head>
-    <title>Grant Spence - Computer Engineer</title>
-    <script src="js/jquery-2.1.0.min.js"></script>
+    <title>Grant Spence - Web Developer</title>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-196x196.png?v=3" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png?v=3" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png?v=3" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png?v=3" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-128.png?v=3" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <!--Facebook Open Graph-->
+    <meta property="og:url"                content="http://grantspence.com" />
+    <meta property="og:title"              content="Portfolio and Blog" />
+    <meta property="og:description"        content="An experimental website and blog in which I can push ideas for the world to see. My portfolio, projects, hacks, and how-to’s." />
+    <meta property="og:image"              content="http://grantspence.com/img/grant3.jpeg" />
+
+    <script src="/js/jquery-2.2.0.min.js"></script>
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap-theme.min.css">
-       <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -14,36 +42,14 @@
     <meta name="description" content="Grant Spence Computer Engineer">
     <meta name="keywords" content="Grant Spence, Virginia Tech, Mountain Biking">
     <meta name="author" content="Grant Spence">
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="/js/jquery.mousewheel-3.0.6.pack.js"></script>
 
     <!-- Add fancyBox main JS and CSS files -->
     <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
     <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
 
-    <!-- Add Button helper (this is optional) -->
-    <link rel="stylesheet" type="text/css" href="fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
-    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-
-    <!-- Add Thumbnail helper (this is optional) -->
-    <link rel="stylesheet" type="text/css" href="fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
-    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
     <!-- Add Media helper (this is optional) -->
-    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-    <!--<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <script type="text/javascript" src="js/skrollr.min.js"></script>
-
-    <style type="text/css">
-    .fancybox-custom .fancybox-skin {
-        box-shadow: 0 0 50px #222;
-    }
-    body {
-        margin: 0 auto;
-    }
-    </style>
 </head>
 @if( Request::is('/') )
 <body id="main" class="home">
@@ -52,6 +58,10 @@
 @elseif ( Request::is('development') )
 <body id="main" class="dev">
 @elseif ( Request::is('blog') )
+<body id="main" class="blog">
+@elseif ( Request::is('dev/*') )
+<body id="main" class="projects">
+@elseif ( Request::is('hacks/*') )
 <body id="main" class="blog">
 @endif
     <div id="page">
@@ -69,53 +79,49 @@
                 <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul id="nav_list_wrap" class="nav navbar-nav">
-                    <li class="nav_link">
-                        <a href="/" class="">Home</a>
-                        <?php
-                            if ( Request::is('/') )
-                                echo '<hr class="underline">'
-                        ?>
-                    </li>
-
-                    <li class="nav_link">
-                        <a href="/resume">Resume</a>
-                        <?php
-                            if ( Request::is('resume') )
-                                echo '<hr class="underline">'
-                        ?>
-                    </li>
-
-                    <li class="nav_link">
-                        <a href="/development">Projects</a>
+                        <li class="nav_link">
+                            <a href="/" class="">Home</a>
                             <?php
-                            if ( Request::is('development') )
-                                echo '<hr class="underline">'
-                        ?>
-                    </li>
+                                // if ( Request::is('/') )
+                                //     echo '<hr class="underline">'
+                            ?>
+                        </li>
 
-                    <li class="nav_link">
-                        <a href="/blog" class="">Blog</a>
-                        <?php
-                            if ( Request::is('blog') )
-                                echo '<hr class="underline">'
-                        ?>
-                    </li>
+                        <li class="nav_link">
+                            <a href="/resume">Resume</a>
+                            <?php
+                                if ( Request::is('resume') )
+                                    echo '<hr class="underline">'
+                            ?>
+                        </li>
 
-                </ul>
+                        <li class="nav_link">
+                            <a href="/development">Projects</a>
+                                <?php
+                                if ( Request::is('development') )
+                                    echo '<hr class="underline">'
+                            ?>
+                        </li>
+
+                        <li class="nav_link">
+                            <a href="/blog" class="">Blog</a>
+                            <?php
+                                if ( Request::is('blog') )
+                                    echo '<hr class="underline">'
+                            ?>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <p id="back-top">
-            <a href="#top"><span></span></a>
-        </p>
-
         <div id="main-wrapper">
             @yield('content')
         </div>
 
         <div class="clearfooter"></div>
+
         <footer>
-            <div class="col-md-9 col-centered full">
+            <div class="col-md-9 col-centered footer_div">
                 <!--<div class="logo" id="logo_bottom">
 					<a href="/">Grant Spence</a>
 				</div> -->
@@ -132,95 +138,8 @@
 <script>
 
 $(document).ready(function() {
-    // hide #back-top first
-    $("#back-top").hide();
-    
-    var s = skrollr.init();
-    // // fade in #back-top
-    // $(function () {
-    //     $(window).scroll(function () {
-    //         if ($(this).scrollTop() > 100) {
-    //             $('#back-top').fadeIn();
-    //         } else {
-    //             $('#back-top').fadeOut();
-    //         }
-    //     });
-
-    //     // scroll body to 0px on click
-    //     $('#back-top a').click(function () {
-    //         $('body,html').animate({
-    //             scrollTop: 0
-    //         }, 800);
-    //         return false;
-    //     });
-    // });
-    // var message = 1;
-    // setInterval(function(){
-    //     if ( message == 1 ) {
-    //       $('.desc-middle p').fadeOut(500, function() {
-    //         $('.desc-middle p').text('Glad you\'re here');
-    //         $('.desc-middle p').fadeIn(500, function() {
-    //             message = 2;
-    //         });
-    //       });
-    //     }
-    //     else if ( message == 2 ) {
-    //         $('.desc-middle p').fadeOut(500, function() {
-    //         $('.desc-middle p').text('Stay awhile');
-    //         $('.desc-middle p').fadeIn(500, function() {
-    //             message = 3;
-    //         });
-    //       });
-    //     }
-    //     else if ( message == 3 ) {
-    //         $('.desc-middle p').fadeOut(500, function() {
-    //         $('.desc-middle p').text('Welcome');
-    //         $('.desc-middle p').fadeIn(500, function() {
-    //             message = 1;
-    //         });
-    //       });
-    //     }
-    // }, 4000);
-    
-    $('.main .desc-middle').click( function() {
-        var aTag = $("a[name='"+ "content" +"']");
-        $('html,body').animate({scrollTop: $('#main-wrapper').height()},'slow');
+    $('.tall .desc-middle').click( function() {
+        $('html,body').animate({scrollTop: $('.black-curtain').offset().top},'slow');
     });
-
-    // var topLower = $('#lower_nav').offset().top;
-    // var isFixed = false;
-    // // parallax header
-    // $(window).scroll(function() {
-    //     var scroll = $(window).scrollTop(),
-    //         slowScroll = scroll / 3;
-    //     if (scroll >= 0) {
-    //         $('#upper_nav').css({
-    //             transform: "translateY(" + slowScroll + "px)"
-    //         });
-    //         var scrollTop = $(window).scrollTop();
-    //         if (scrollTop > topLower && !isFixed) {
-    //             $('#lower_nav').css({
-    //                 position: 'fixed',
-    //                 top: 0,
-    //             });
-    //             $('#main-wrapper').css({
-    //                 marginTop: '50px'
-    //             });
-    //             $('#lower_nav').animate({ backgroundColor: "black" }, 1000);
-    //             isFixed = true;
-    //         } else if (scrollTop == 0 && isFixed) {
-    //             $('#lower_nav').css({
-    //                 position: 'relative',
-    //                 "background-color": 'none'
-    //             });
-    //             $('#main-wrapper').css({
-    //                 marginTop: '0px'
-    //             });
-    //             $('#lower_nav').animate({ backgroundColor: "transparent" }, 1000);
-    //             isFixed = false;
-    //         }
-    //     }
-    // });
-
 });
 </script>

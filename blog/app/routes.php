@@ -23,7 +23,9 @@ Route::get('/', function()
 
 Route::get('/', 'BaseController@home');
 Route::get('/blog', 'BaseController@blog');
-Route::get('/blog/{name}','BaseController@post');
+Route::get('/dev/{name}','BaseController@post');
+Route::get('/hacks/{name}','BaseController@hacks');
+Route::get('/hacks/{name}/{k}','BaseController@hacks');
 Route::get('/development', 'BaseController@development');
 Route::get('/resume', 'BaseController@resume');
 Route::get('/test', 'BaseController@test');

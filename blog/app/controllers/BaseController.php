@@ -48,13 +48,23 @@ class BaseController extends Controller {
 	}
     
     public function blog() {
-        $page = get_post(5);
+        $post = get_post(5);
 
-        return View::make('blog')->with('page', $page);
+
+        return View::make('blog')->with('page', $post);
+    }
+
+    public function hacks($name) {
+        $page = get_page_by_path($name,'OBJECT','post');
+        if ( $page ) {
+            return View::make('blog')->with('page', $page);
+        }
+        else {
+            return "ERROR";
+        }
     }
 
     public function post($name) {
-        Log::info($name);
         $page = get_page_by_path($name,'OBJECT','post');
         if ( $page ) {
             return View::make('dev_detail')->with('page', $page);
@@ -90,10 +100,14 @@ class BaseController extends Controller {
         usort($hardwares,array($this,'date_compare'));
         usort($apps,array($this,'date_compare'));
 
+        $names = array('WEBSITES & APPS',
+               'HARDWARE HACKS',
+            'IOS/ANDROID APPS');
+        $projects = array($websites, $hardwares, $apps);
+
         return View::make('development')
-        ->with('websites',$websites)
-        ->with('hardwares',$hardwares)
-        ->with('apps',$apps);
+        ->with('projects',$projects)
+        ->with('names',$names);
     }
     
 
