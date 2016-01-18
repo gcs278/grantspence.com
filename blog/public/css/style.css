@@ -561,8 +561,9 @@ html, body {
   -moz-background-size: cover;
   background-color:#464646;
   -o-background-size: cover;
-  background-size: cover;height: 100%;
-
+  background-size: cover;
+  height: 100%;
+  
 }
 #main.dev {
     background: url('/img/project.jpeg')no-repeat center center fixed;

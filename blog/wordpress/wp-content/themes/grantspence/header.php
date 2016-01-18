@@ -1,4 +1,5 @@
 <?php
+auth_redirect();
 /**
  * The template for displaying the header
  *
@@ -9,6 +10,7 @@
  * @since Grant Spence 1.0
  */
 ?><!DOCTYPE html>
+
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
