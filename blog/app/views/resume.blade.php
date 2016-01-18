@@ -103,7 +103,7 @@
 							<div class="education">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 hidden-xs edu-logo">
-										<img src="/img/VT_Logo2.png">
+										<img src="/img/vt_logo2.png">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-12">
 										<div class="inside">
@@ -115,7 +115,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-3 col-sm-3 hidden-xs edu-logo">
-										<img src="/img/ESCC3.jpeg">
+										<img src="/img/escc3.jpeg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-12">
 										<div class="inside">
