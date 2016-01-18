@@ -28,9 +28,10 @@
 
     <!--Facebook Open Graph-->
     <meta property="og:url"                content="http://grantspence.com" />
-    <meta property="og:title"              content="Portfolio and Blog" />
+    <meta property="og:title"              content="Grant's Portfolio and Blog" />
     <meta property="og:description"        content="An experimental website and blog in which I can push ideas for the world to see. My portfolio, projects, hacks, and how-to’s." />
     <meta property="og:image"              content="http://grantspence.com/img/grant3.jpeg" />
+    <meta property="fb:app_id"              content="800590736740191" />
 
     <script src="/js/jquery-2.2.0.min.js"></script>
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
