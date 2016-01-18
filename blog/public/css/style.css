@@ -559,8 +559,10 @@ html, body {
    background: url('/img/mac.jpg') no-repeat center center fixed;
  -webkit-background-size: cover;
   -moz-background-size: cover;
+  background-color:#464646;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;height: 100%;
+
 }
 #main.dev {
     background: url('/img/project.jpeg')no-repeat center center fixed;
@@ -603,6 +605,12 @@ html, body {
 }
 #main.projects #lower_nav a {
     color: black;
+}
+#main.dev #lower_nav a {
+    color: white;
+}
+#main.home #lower_nav a {
+    color: white;
 }
 #main.home #lower_nav hr {
     border-color: white;
@@ -694,7 +702,7 @@ html, body {
     text-decoration: none;
 }
 #lower_nav a {
-    color: white;
+    color: black;
 }
 #lower_nav li.nav_link:hover {
     background-color: transparent !important;
@@ -1998,3 +2006,28 @@ section.parallax-back {
 .form-submit {
     display: none;
 } 
+#error {
+    position: relative;
+    text-align: center;
+    height: 80vh;
+    margin-top: 50px;
+}
+#error h1 {
+    margin-top: 0px;
+}
+#error .e404 {
+    text-align: center;
+    /*font-weight: bold;*/
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    margin-top: -50px;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    top: 50%;
+    font-family: SSP;
+    line-height: 100%;
+    display: block;
+    font-size: 150px;
+}
