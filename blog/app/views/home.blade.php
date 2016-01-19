@@ -1,9 +1,9 @@
 @extends('layout')
 @section('content')
-	<div class="container">
-		<div class="row">
-			<div class="md-col-12">
-				<div class="tall">
+	<div class="container full-height minus50">
+		<div class="row full-height">
+			<div class="md-col-12 full-height">
+				<div class="tall full-height">
 					<div class="desc-middle clickable">
 						<p class="headline">WEB DEVELOPER</p>
 						<p class="fancy strikethrough">And much more</p>
@@ -12,6 +12,8 @@
 			</div>
 		</div>
 	</div>
+<!--End Background-->
+</div> 
 
 	<div class="black-curtain full">
 		<div class="container-fluid">

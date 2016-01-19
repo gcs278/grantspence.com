@@ -60,8 +60,7 @@ h1, h2, h3, h4, h5 {
     font-family: dosis, sans-serif;
     min-height: 100%;
     position: relative;
-    padding-bottom: 50px;
-    /*  font-family: source-sans-pro, helvetica, arial, sans-serif;*/
+    /*padding-bottom: 50px;*/
 }
 #upper_nav {
     width: 100%;
@@ -184,8 +183,9 @@ li {
     list-style: ;
     list-style-image: none;
 }
-.full {
+.full-height {
     height: 100% !important;
+    position: relative;
 }
 .column {
     width: 1024px;
@@ -504,7 +504,7 @@ span.text-content span {
 footer {
     display: table;
     height: 50px;
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     left: 0;
     margin-top: 0px;
@@ -539,7 +539,7 @@ html, body {
 }
 @media ( max-width: 330px) {
     #copyright {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 .clearfooter {
@@ -547,25 +547,22 @@ html, body {
     clear: both;
 }
 
-#main-wrapper {
-    /*padding-top: 50px;*/
-}
 /* New stuff */
 #main {
     /*height: 100%;   */
 }
 
-#main.home {
+#main.home .background {
    background: url('/img/mac-min.jpg') no-repeat center center fixed;
  -webkit-background-size: cover;
   -moz-background-size: cover;
   background-color:#464646;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
 }
 @media (max-width: 500px) {
-    #main.home {
+    #main.home .background {
         background-attachment: scroll; 
     }
 }
@@ -692,17 +689,19 @@ html, body {
 .tall {
     position: relative;
     text-align: center;
-    height: 90vh;
-    /*top: 50px;*/
+    margin-top: 00px;
+    height: 100%;
+}
+.background {
+    
 }
 .tall p {
     position: relative;
     font-size: 75px;
     margin-bottom: 0px;
-    top: 50px;
 }
 .dev .tall {
-    height: 30vh;
+    height: 43vh;
 }
 .tall p:hover {
     text-decoration: none;
@@ -783,7 +782,9 @@ html, body {
     left: 10%;
     top: 34%;
 }
-
+.minus50 {
+    margin-top: -50px;
+}
 .desc-sm {
     position: absolute;
     left: 50%;
@@ -796,7 +797,7 @@ html, body {
 .desc-middle {
     position: absolute;
     left: 50%;
-    margin-top: -50px;
+    margin-top: 0px;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);

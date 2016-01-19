@@ -62,73 +62,76 @@
 <body id="main" class="blog">
 @endif
     <div id="page">
-        <nav class="navbar" id="lower_nav" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <a href="/">Grant Spence</a>
-                </div>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul id="nav_list_wrap" class="nav navbar-nav">
-                        <li class="nav_link">
-                            <a href="/" class="">Home</a>
-                            <?php
-                                // if ( Request::is('/') )
-                                //     echo '<hr class="underline">'
-                            ?>
-                        </li>
-
-                        <li class="nav_link">
-                            <a href="/resume">Resume</a>
-                            <?php
-                                if ( Request::is('resume') )
-                                    echo '<hr class="underline">'
-                            ?>
-                        </li>
-
-                        <li class="nav_link">
-                            <a href="/development">Projects</a>
+        @if( Request::is('/') )
+        <div class="background">
+        @elseif ( Request::is('development') )
+        <div class="background">
+        @endif
+            <nav class="navbar" id="lower_nav" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="/">Grant Spence</a>
+                    </div>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul id="nav_list_wrap" class="nav navbar-nav">
+                            <li class="nav_link">
+                                <a href="/" class="">Home</a>
                                 <?php
-                                if ( Request::is('development') )
-                                    echo '<hr class="underline">'
-                            ?>
-                        </li>
+                                    // if ( Request::is('/') )
+                                    //     echo '<hr class="underline">'
+                                ?>
+                            </li>
 
-                        <li class="nav_link">
-                            <a href="/blog" class="">Blog</a>
-                            <?php
-                                if ( Request::is('blog') )
-                                    echo '<hr class="underline">'
-                            ?>
-                        </li>
-                    </ul>
+                            <li class="nav_link">
+                                <a href="/resume">Resume</a>
+                                <?php
+                                    if ( Request::is('resume') )
+                                        echo '<hr class="underline">'
+                                ?>
+                            </li>
+
+                            <li class="nav_link">
+                                <a href="/development">Projects</a>
+                                    <?php
+                                    if ( Request::is('development') )
+                                        echo '<hr class="underline">'
+                                ?>
+                            </li>
+
+                            <li class="nav_link">
+                                <a href="/blog" class="">Blog</a>
+                                <?php
+                                    if ( Request::is('blog') )
+                                        echo '<hr class="underline">'
+                                ?>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <div id="main-wrapper">
+            </nav>
+            
             @yield('content')
-        </div>
-
-        <div class="clearfooter"></div>
-
-        <footer>
-            <div class="col-md-9 col-centered footer_div">
-                <!--<div class="logo" id="logo_bottom">
-					<a href="/">Grant Spence</a>
-				</div> -->
-                <div id="copyright">
-                    Developed and Designed by Grant Spence &copy; 2016
-                </div>
             </div>
-        </footer>
+                <div class="clearfooter"></div>
 
-    </div>
+                <footer>
+                    <div class="col-md-9 col-centered footer_div">
+                        <!--<div class="logo" id="logo_bottom">
+        					<a href="/">Grant Spence</a>
+        				</div> -->
+                        <div id="copyright">
+                            Developed and Designed by Grant Spence &copy; 2016
+                        </div>
+                    </div>
+                </footer>
+            </div>
 </body>
 
 </html>

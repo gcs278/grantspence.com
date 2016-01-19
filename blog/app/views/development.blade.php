@@ -6,18 +6,20 @@ DEVELOPMENT
 <div class="sideways-large-right">
 DEVELOPMENT
 </div> -->
-<div class="container">
-    <div class="row">
-        <div class="md-col-12">
-            <div class="tall">
-                <div class="desc-middle">
-                    <p>PROJECTS</p>
-                    <!-- <p class="fancy strikethrough">Please Browse</p> -->
+    <div class="container full-height minus50">
+        <div class="row full-height">
+            <div class="md-col-12 full-height">
+                <div class="tall">
+                    <div class="desc-middle">
+                        <p>PROJECTS</p>
+                        <!-- <p class="fancy strikethrough">Please Browse</p> -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+<!--End Background-->
+</div> 
 
 
 @foreach ( $projects as $key=>$project )
