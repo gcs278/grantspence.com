@@ -693,12 +693,13 @@ html, body {
     position: relative;
     text-align: center;
     height: 90vh;
-    top: 50px;
+    /*top: 50px;*/
 }
 .tall p {
     position: relative;
     font-size: 75px;
     margin-bottom: 0px;
+    top: 50px;
 }
 .dev .tall {
     height: 30vh;
