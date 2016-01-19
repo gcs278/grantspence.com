@@ -31,7 +31,7 @@ $withcomments = 1;
         <div class="row content">
             <div class="col-md-8 col-md-offset-2">
             <?php
-                echo do_shortcode($page->post_content);
+                the_content();
             ?>
             </div>
         </div><!-- .entry-content -->
