@@ -566,12 +566,17 @@ html, body {
         background-attachment: scroll; 
     }
 }
-#main.dev {
+#main.dev .background {
     background: url('/img/project-min.jpeg')no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+@media (max-width: 500px) {
+    #main.dev .background {
+        background-attachment: scroll; 
+    }
 }
 #main.mbike {
 /*    background: url('/img/mbike_back2.jpg') no-repeat center center fixed;
