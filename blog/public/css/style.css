@@ -563,7 +563,11 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
-
+}
+@media (max-width: 500px) {
+    #main.home {
+        background-attachment: scroll; 
+    }
 }
 #main.dev {
     background: url('/img/project-min.jpeg')no-repeat center center fixed;
@@ -689,7 +693,7 @@ html, body {
     position: relative;
     text-align: center;
     height: 90vh;
-    margin-top: 50px;
+    top: 50px;
 }
 .tall p {
     position: relative;
