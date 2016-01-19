@@ -51,7 +51,7 @@
 @if( Request::is('/') )
 <body id="main" class="home">
 @elseif ( Request::is('resume') )
-<body id="main" class="resume" data-0="background-color: rgb(255,255,255);" data-100="background-color: rgb(255,255,255);">
+<body id="main" class="resume">
 @elseif ( Request::is('development') )
 <body id="main" class="dev">
 @elseif ( Request::is('blog') )
