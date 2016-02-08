@@ -62,9 +62,7 @@
 									<div class="objective">
 										<div class="resume-box">
 											<p>
-												I am a dedicated and passionate full stack web developer. 
-												My objective in life is to never stop learning about technology and contribute to developing new technologies. 
-												My career goal is to develop web-based technology and design that inspire.
+				I am a dedicated and passionate full stack web developer. My objective in life is to never stop learning about technology and to contribute to developing new technologies. My career goal is to develop web-based technology and design that inspires.
 											</p>
 										</div>
 									</div>

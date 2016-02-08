@@ -22,7 +22,7 @@
 					<div class="home_intro">
 						<img class="circle" src="/img/grant3.jpeg" >
 						<h1 class="strikethrough">GRANT SPENCE</h1>
-						<p>I am a dedicated and passionate full stack web developer. My objective in life is to never stop learning about technology and contribute to developing new technologies. My career goal is to develop web-based technology and design that inspire.</p>
+						<p>I am a dedicated and passionate full stack web developer. My objective in life is to never stop learning about technology and to contribute to developing new technologies. My career goal is to develop web-based technology and design that inspires.</p>
 						<div class="link-box-section">
 							<a href="/resume" class="link-box clickable">
 								RESUME
